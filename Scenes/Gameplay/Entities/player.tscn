@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://b81adi5mlbecl"]
+
+[ext_resource type="Texture2D" uid="uid://cdf8dd3oky7p7" path="res://Assets/Gameplay Skins/skn_recoded.png" id="1_t2yq0"]
+[ext_resource type="Script" uid="uid://bmn0nhwb1g1j5" path="res://Scripts/Components/Gameplay Components/Player Components/player_input.gd" id="2_rlo5k"]
+[ext_resource type="Script" uid="uid://dcxwib0d8osyc" path="res://Scripts/Components/Gameplay Components/Player Components/player_gun.gd" id="3_hxtw5"]
+[ext_resource type="PackedScene" uid="uid://b53hw1skaqe50" path="res://Scenes/Gameplay/Extra/obj_bullet.tscn" id="4_rlo5k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t2yq0"]
+
+[node name="Player" type="CharacterBody2D" unique_id=108686648]
+
+[node name="Player Sprite" type="Sprite2D" parent="." unique_id=199937032]
+modulate = Color(1, 1, 0, 1)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("1_t2yq0")
+hframes = 4
+vframes = 3
+frame = 6
+
+[node name="Collider Cast" type="RayCast2D" parent="." unique_id=810538933]
+target_position = Vector2(-16, 0)
+collide_with_areas = true
+
+[node name="Muzzle" type="Marker2D" parent="." unique_id=776199737]
+
+[node name="Shape 2D" type="CollisionShape2D" parent="." unique_id=913581911]
+shape = SubResource("RectangleShape2D_t2yq0")
+debug_color = Color(1, 1, 0, 0.41960785)
+
+[node name="Player Components" type="Node" parent="." unique_id=586165282]
+
+[node name="PlayerInputComponent" type="Node" parent="Player Components" unique_id=1475234609 node_paths=PackedStringArray("player", "collider_cast")]
+script = ExtResource("2_rlo5k")
+player = NodePath("../..")
+collider_cast = NodePath("../../Collider Cast")
+metadata/_custom_type_script = "uid://bmn0nhwb1g1j5"
+
+[node name="PlayerGunComponent" type="Node" parent="Player Components" unique_id=182345039 node_paths=PackedStringArray("muzzle")]
+script = ExtResource("3_hxtw5")
+muzzle = NodePath("../../Muzzle")
+bullet = ExtResource("4_rlo5k")
+metadata/_custom_type_script = "uid://dcxwib0d8osyc"

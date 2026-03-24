@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://b53hw1skaqe50"]
+
+[ext_resource type="Texture2D" uid="uid://cdf8dd3oky7p7" path="res://Assets/Gameplay Skins/skn_recoded.png" id="1_vn30o"]
+[ext_resource type="Script" uid="uid://c3a0rxqasx5nn" path="res://Scripts/Components/Gameplay Components/Player Components/player_bullet.gd" id="2_vapn3"]
+
+[node name="OBJ Bullet" type="CharacterBody2D" unique_id=1137960808]
+
+[node name="Bullet Sprite" type="Sprite2D" parent="." unique_id=105471401]
+modulate = Color(1, 1, 0, 1)
+scale = Vector2(0.375, 0.375)
+texture = ExtResource("1_vn30o")
+hframes = 4
+vframes = 3
+frame = 9
+
+[node name="Eraser Cast" type="RayCast2D" parent="." unique_id=858811707]
+exclude_parent = false
+target_position = Vector2(0, -16)
+
+[node name="Bullet Timers" type="Node" parent="." unique_id=1713073755]
+
+[node name="Move Delay" type="Timer" parent="Bullet Timers" unique_id=1392721631]
+wait_time = 0.1
+one_shot = true
+
+[node name="Bullet Components" type="Node" parent="." unique_id=2019398334]
+
+[node name="PlayerBulletComponent" type="Node" parent="Bullet Components" unique_id=1082084172 node_paths=PackedStringArray("bullet", "eraser_cast", "move_delay")]
+script = ExtResource("2_vapn3")
+bullet = NodePath("../..")
+eraser_cast = NodePath("../../Eraser Cast")
+move_delay = NodePath("../../Bullet Timers/Move Delay")
+metadata/_custom_type_script = "uid://c3a0rxqasx5nn"

@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cag1jsh8avm15"]
 
+[ext_resource type="PackedScene" uid="uid://7e4evomgrtuu" path="res://Scenes/Gameplay/Board/guideline-board.tscn" id="1_jjgbg"]
+
 [sub_resource type="Environment" id="Environment_bo1nx"]
 background_mode = 3
 glow_enabled = true
@@ -12,3 +14,9 @@ glow_hdr_threshold = 0.54
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=54606518]
 environment = SubResource("Environment_bo1nx")
+
+[node name="GuidelineBoard" parent="." unique_id=1795045438 instance=ExtResource("1_jjgbg")]
+position = Vector2(552, 320)
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1464685666 groups=["Board Pinner"]]
+position = Vector2(552, 320)

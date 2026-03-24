@@ -1,0 +1,304 @@
+[gd_scene format=4 uid="uid://7e4evomgrtuu"]
+
+[ext_resource type="Texture2D" uid="uid://cdf8dd3oky7p7" path="res://Assets/Gameplay Skins/skn_recoded.png" id="1_fgcsm"]
+[ext_resource type="Script" uid="uid://xncmioquk3uk" path="res://Scripts/Components/Gameplay Components/Board Components/board_component.gd" id="2_sspuk"]
+[ext_resource type="Script" uid="uid://cifeyj1aiblhf" path="res://Scripts/Components/Gameplay Components/Board Components/board_animator.gd" id="3_bs78j"]
+[ext_resource type="PackedScene" uid="uid://b81adi5mlbecl" path="res://Scenes/Gameplay/Entities/player.tscn" id="4_xqylc"]
+[ext_resource type="PackedScene" uid="uid://dbfjqp7dqprae" path="res://Scenes/Gameplay/Entities/intruder.tscn" id="5_8n0xe"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sspuk"]
+texture = ExtResource("1_fgcsm")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_bs78j"]
+sources/0 = SubResource("TileSetAtlasSource_sspuk")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o1j4a"]
+texture = ExtResource("1_fgcsm")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_xqylc"]
+sources/0 = SubResource("TileSetAtlasSource_o1j4a")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8n0xe"]
+texture = ExtResource("1_fgcsm")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_gyj51"]
+sources/0 = SubResource("TileSetAtlasSource_8n0xe")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fq5lo"]
+texture = ExtResource("1_fgcsm")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_hlaqj"]
+sources/0 = SubResource("TileSetAtlasSource_fq5lo")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_liugp"]
+texture = ExtResource("1_fgcsm")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_p8l64"]
+sources/0 = SubResource("TileSetAtlasSource_liugp")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m3dow"]
+size = Vector2(32, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ypm3f"]
+size = Vector2(160, 96)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8mqsp"]
+size = Vector2(160, 64)
+
+[node name="GuidelineBoard" type="Node2D" unique_id=1795045438]
+
+[node name="Board Stucture" type="Node2D" parent="." unique_id=22244448]
+
+[node name="Board Background" type="TileMapLayer" parent="Board Stucture" unique_id=652323947]
+modulate = Color(1, 1, 1, 0.78431374)
+tile_map_data = PackedByteArray("AAD/////AAAAAAAAAAD//wAAAAAAAAEAAAAAAP//AAABAAAAAAAAAAAAAAABAAEAAAABAP//AAAAAAAAAAABAAAAAAAAAAEAAAACAP//AAABAAAAAAACAAAAAAABAAEAAAD9////AAAAAAAAAAD9/wAAAAAAAAEAAAD+////AAABAAAAAAD+/wAAAAABAAEAAAD7////AAAAAAAAAAD7/wAAAAAAAAEAAAD8////AAABAAAAAAD8/wAAAAABAAEAAAADAP//AAAAAAAAAAADAAAAAAAAAAEAAAAEAP//AAABAAAAAAAEAAAAAAABAAEAAAD7/wEAAAAAAAAAAAD7/wIAAAAAAAEAAAD8/wEAAAABAAAAAAD8/wIAAAABAAEAAAD7/wMAAAAAAAAAAAD7/wQAAAAAAAEAAAD8/wMAAAABAAAAAAD8/wQAAAABAAEAAAD7/wUAAAAAAAAAAAD7/wYAAAAAAAEAAAD8/wUAAAABAAAAAAD8/wYAAAABAAEAAAD7/wcAAAAAAAAAAAD7/wgAAAAAAAEAAAD8/wcAAAABAAAAAAD8/wgAAAABAAEAAAADAP3/AAAAAAAAAAADAP7/AAAAAAEAAAAEAP3/AAABAAAAAAAEAP7/AAABAAEAAAADAPv/AAAAAAAAAAADAPz/AAAAAAEAAAAEAPv/AAABAAAAAAAEAPz/AAABAAEAAAADAPn/AAAAAAAAAAADAPr/AAAAAAEAAAAEAPn/AAABAAAAAAAEAPr/AAABAAEAAAADAPf/AAAAAAAAAAADAPj/AAAAAAEAAAAEAPf/AAABAAAAAAAEAPj/AAABAAEAAAD9/wcAAAAAAAAAAAD9/wgAAAAAAAEAAAD+/wcAAAABAAAAAAD+/wgAAAABAAEAAAD//wcAAAAAAAAAAAD//wgAAAAAAAEAAAAAAAcAAAABAAAAAAAAAAgAAAABAAEAAAABAAcAAAAAAAAAAAABAAgAAAAAAAEAAAACAAcAAAABAAAAAAACAAgAAAABAAEAAAADAAcAAAAAAAAAAAADAAgAAAAAAAEAAAAEAAcAAAABAAAAAAAEAAgAAAABAAEAAAADAAUAAAAAAAAAAAADAAYAAAAAAAEAAAAEAAUAAAABAAAAAAAEAAYAAAABAAEAAAADAAMAAAAAAAAAAAADAAQAAAAAAAEAAAAEAAMAAAABAAAAAAAEAAQAAAABAAEAAAADAAEAAAAAAAAAAAADAAIAAAAAAAEAAAAEAAEAAAABAAAAAAAEAAIAAAABAAEAAAABAAEAAAAAAAAAAAABAAIAAAAAAAEAAAACAAEAAAABAAAAAAACAAIAAAABAAEAAAD//wEAAAAAAAAAAAD//wIAAAAAAAEAAAAAAAEAAAABAAAAAAAAAAIAAAABAAEAAAD9/wMAAAAAAAAAAAD9/wQAAAAAAAEAAAD+/wMAAAABAAAAAAD+/wQAAAABAAEAAAD9/wUAAAAAAAAAAAD9/wYAAAAAAAEAAAD+/wUAAAABAAAAAAD+/wYAAAABAAEAAAD//wUAAAAAAAAAAAD//wYAAAAAAAEAAAAAAAUAAAABAAAAAAAAAAYAAAABAAEAAAABAAUAAAAAAAAAAAABAAYAAAAAAAEAAAACAAUAAAABAAAAAAACAAYAAAABAAEAAAABAAMAAAAAAAAAAAABAAQAAAAAAAEAAAACAAMAAAABAAAAAAACAAQAAAABAAEAAAD//wMAAAAAAAAAAAD//wQAAAAAAAEAAAAAAAMAAAABAAAAAAAAAAQAAAABAAEAAAD9/wEAAAAAAAAAAAD9/wIAAAAAAAEAAAD+/wEAAAABAAAAAAD+/wIAAAABAAEAAAD7//3/AAAAAAAAAAD7//7/AAAAAAEAAAD8//3/AAABAAAAAAD8//7/AAABAAEAAAD7//v/AAAAAAAAAAD7//z/AAAAAAEAAAD8//v/AAABAAAAAAD8//z/AAABAAEAAAD7//n/AAAAAAAAAAD7//r/AAAAAAEAAAD8//n/AAABAAAAAAD8//r/AAABAAEAAAD9//n/AAAAAAAAAAD9//r/AAAAAAEAAAD+//n/AAABAAAAAAD+//r/AAABAAEAAAD9//f/AAAAAAAAAAD9//j/AAAAAAEAAAD+//f/AAABAAAAAAD+//j/AAABAAEAAAD7//f/AAAAAAAAAAD7//j/AAAAAAEAAAD8//f/AAABAAAAAAD8//j/AAABAAEAAAD///f/AAAAAAAAAAD///j/AAAAAAEAAAAAAPf/AAABAAAAAAAAAPj/AAABAAEAAAABAPf/AAAAAAAAAAABAPj/AAAAAAEAAAACAPf/AAABAAAAAAACAPj/AAABAAEAAAABAPn/AAAAAAAAAAABAPr/AAAAAAEAAAACAPn/AAABAAAAAAACAPr/AAABAAEAAAD///n/AAAAAAAAAAD///r/AAAAAAEAAAAAAPn/AAABAAAAAAAAAPr/AAABAAEAAAD///v/AAAAAAAAAAD///z/AAAAAAEAAAAAAPv/AAABAAAAAAAAAPz/AAABAAEAAAD///3/AAAAAAAAAAD///7/AAAAAAEAAAAAAP3/AAABAAAAAAAAAP7/AAABAAEAAAD9//3/AAAAAAAAAAD9//7/AAAAAAEAAAD+//3/AAABAAAAAAD+//7/AAABAAEAAAD9//v/AAAAAAAAAAD9//z/AAAAAAEAAAD+//v/AAABAAAAAAD+//z/AAABAAEAAAABAPv/AAAAAAAAAAABAPz/AAAAAAEAAAACAPv/AAABAAAAAAACAPz/AAABAAEAAAABAP3/AAAAAAAAAAABAP7/AAAAAAEAAAACAP3/AAABAAAAAAACAP7/AAABAAEAAAD7/wkAAAAAAAAAAAD7/woAAAAAAAEAAAD8/wkAAAABAAAAAAD8/woAAAABAAEAAAD9/wkAAAAAAAAAAAD9/woAAAAAAAEAAAD+/wkAAAABAAAAAAD+/woAAAABAAEAAAD//wkAAAAAAAAAAAD//woAAAAAAAEAAAAAAAkAAAABAAAAAAAAAAoAAAABAAEAAAABAAkAAAAAAAAAAAABAAoAAAAAAAEAAAACAAkAAAABAAAAAAACAAoAAAABAAEAAAADAAkAAAAAAAAAAAADAAoAAAAAAAEAAAAEAAkAAAABAAAAAAAEAAoAAAABAAEAAAA=")
+tile_set = SubResource("TileSet_bs78j")
+
+[node name="Board Limit Area" type="TileMapLayer" parent="Board Stucture" unique_id=1639220888]
+modulate = Color(1, 1, 1, 0.11764706)
+tile_map_data = PackedByteArray("AAD7/wkAAAACAAAAAAD7/woAAAACAAEAAAD8/wkAAAADAAAAAAD8/woAAAADAAEAAAD7/wcAAAACAAAAAAD7/wgAAAACAAEAAAD8/wcAAAADAAAAAAD8/wgAAAADAAEAAAD9/wcAAAACAAAAAAD9/wgAAAACAAEAAAD+/wcAAAADAAAAAAD+/wgAAAADAAEAAAD//wcAAAACAAAAAAD//wgAAAACAAEAAAAAAAcAAAADAAAAAAAAAAgAAAADAAEAAAABAAcAAAACAAAAAAABAAgAAAACAAEAAAACAAcAAAADAAAAAAACAAgAAAADAAEAAAADAAcAAAACAAAAAAADAAgAAAACAAEAAAAEAAcAAAADAAAAAAAEAAgAAAADAAEAAAADAAkAAAACAAAAAAADAAoAAAACAAEAAAAEAAkAAAADAAAAAAAEAAoAAAADAAEAAAABAAkAAAACAAAAAAABAAoAAAACAAEAAAACAAkAAAADAAAAAAACAAoAAAADAAEAAAD//wkAAAACAAAAAAD//woAAAACAAEAAAAAAAkAAAADAAAAAAAAAAoAAAADAAEAAAD9/wkAAAACAAAAAAD9/woAAAACAAEAAAD+/wkAAAADAAAAAAD+/woAAAADAAEAAAA=")
+tile_set = SubResource("TileSet_xqylc")
+
+[node name="Board Limit Line" type="TileMapLayer" parent="Board Stucture" unique_id=1026808486]
+modulate = Color(1, 1, 1, 0.11764706)
+tile_map_data = PackedByteArray("AAD7/wYAAAACAAIAAAD7/wcAAAACAAMAAAD8/wYAAAADAAIAAAD8/wcAAAADAAMAAAD9/wYAAAACAAIAAAD9/wcAAAACAAMAAAD+/wYAAAADAAIAAAD+/wcAAAADAAMAAAD//wYAAAACAAIAAAD//wcAAAACAAMAAAAAAAYAAAADAAIAAAAAAAcAAAADAAMAAAABAAYAAAACAAIAAAABAAcAAAACAAMAAAACAAYAAAADAAIAAAACAAcAAAADAAMAAAADAAYAAAACAAIAAAADAAcAAAACAAMAAAAEAAYAAAADAAIAAAAEAAcAAAADAAMAAAA=")
+tile_set = SubResource("TileSet_gyj51")
+
+[node name="Board Glow" type="TileMapLayer" parent="Board Stucture" unique_id=2002011721]
+modulate = Color(1, 1, 1, 0.078431375)
+tile_map_data = PackedByteArray("AAD7//f/AAAAAAIAAAD7//j/AAAAAAMAAAD8//f/AAABAAIAAAD8//j/AAABAAMAAAD9//f/AAAAAAIAAAD9//j/AAAAAAMAAAD+//f/AAABAAIAAAD+//j/AAABAAMAAAD///f/AAAAAAIAAAD///j/AAAAAAMAAAAAAPf/AAABAAIAAAAAAPj/AAABAAMAAAABAPf/AAAAAAIAAAABAPj/AAAAAAMAAAACAPf/AAABAAIAAAACAPj/AAABAAMAAAADAPf/AAAAAAIAAAADAPj/AAAAAAMAAAAEAPf/AAABAAIAAAAEAPj/AAABAAMAAAADAAoAAAAAAAIAACAEAAoAAAABAAIAACADAAkAAAAAAAMAACAEAAkAAAABAAMAACABAAoAAAAAAAIAACACAAoAAAABAAIAACABAAkAAAAAAAMAACACAAkAAAABAAMAACD//woAAAAAAAIAACAAAAoAAAABAAIAACD//wkAAAAAAAMAACAAAAkAAAABAAMAACD9/woAAAAAAAIAACD+/woAAAABAAIAACD9/wkAAAAAAAMAACD+/wkAAAABAAMAACD7/woAAAAAAAIAACD8/woAAAABAAIAACD7/wkAAAAAAAMAACD8/wkAAAABAAMAACA=")
+tile_set = SubResource("TileSet_hlaqj")
+
+[node name="Board Edges" type="TileMapLayer" parent="Board Stucture" unique_id=749131144]
+tile_map_data = PackedByteArray("AAD7//f/AAAEAAAAAAD7//j/AAAEAAEAAAD8//f/AAAFAAAAAAD9//f/AAAGAAAAAAD+//f/AAAFAAAAAAAEAPf/AAAEAAAAABADAPf/AAAFAAAAABACAPf/AAAGAAAAABABAPf/AAAHAAAAABAEAPj/AAAEAAEAABABAAoAAAAFAAAAADACAAoAAAAGAAAAADADAAoAAAAFAAAAADAEAAoAAAAEAAAAADAEAAkAAAAEAAEAADD7/wkAAAAEAAEAACD+/woAAAAHAAAAACD9/woAAAAGAAAAACD8/woAAAAFAAAAACD7/woAAAAEAAAAACD///f/AAAGAAAAAAAAAPf/AAAHAAAAAAAEAPn/AAAFAAAAAFAEAPr/AAAGAAAAAFAEAPv/AAAHAAAAAFAEAPz/AAAFAAAAAFAEAP3/AAAGAAAAAFAEAP7/AAAHAAAAAFAEAP//AAAFAAAAAFAEAAAAAAAGAAAAAFAEAAEAAAAHAAAAAFAEAAIAAAAFAAAAAFAEAAMAAAAGAAAAAFAEAAQAAAAHAAAAAFAEAAUAAAAFAAAAAFAEAAYAAAAFAAAAAFAEAAcAAAAGAAAAAFAEAAgAAAAHAAAAAFD7/wYAAAAFAAAAAED7/wcAAAAGAAAAAED7/wgAAAAHAAAAAED7/wMAAAAFAAAAAED7/wQAAAAGAAAAAED7/wUAAAAHAAAAAED7/wAAAAAFAAAAAED7/wEAAAAGAAAAAED7/wIAAAAHAAAAAED7//3/AAAFAAAAAED7//7/AAAGAAAAAED7////AAAHAAAAAED7//r/AAAGAAAAAED7//v/AAAHAAAAAED7//z/AAAHAAAAAED7//n/AAAFAAAAAED//woAAAAHAAAAADAAAAoAAAAGAAAAADA=")
+tile_set = SubResource("TileSet_p8l64")
+
+[node name="Areas + Collisions" type="Node2D" parent="." unique_id=1112867171]
+
+[node name="Barriers" type="StaticBody2D" parent="Areas + Collisions" unique_id=196781562]
+
+[node name="Barrier 1" type="CollisionShape2D" parent="Areas + Collisions/Barriers" unique_id=1378190298]
+position = Vector2(-96, 160)
+shape = SubResource("RectangleShape2D_m3dow")
+
+[node name="Barrier 2" type="CollisionShape2D" parent="Areas + Collisions/Barriers" unique_id=910750561]
+position = Vector2(96, 160)
+shape = SubResource("RectangleShape2D_m3dow")
+
+[node name="Bullet Eraser" type="StaticBody2D" parent="Areas + Collisions" unique_id=2127438190]
+
+[node name="Shape 2D" type="CollisionShape2D" parent="Areas + Collisions/Bullet Eraser" unique_id=1099112772]
+position = Vector2(0, -208)
+shape = SubResource("RectangleShape2D_ypm3f")
+debug_color = Color(1.01074575e-05, 0.98847336, 0.5858324, 0.41960785)
+
+[node name="Player Area" type="StaticBody2D" parent="Areas + Collisions" unique_id=9671385]
+
+[node name="Shape 2D" type="CollisionShape2D" parent="Areas + Collisions/Player Area" unique_id=1726011011]
+position = Vector2(0, 144)
+shape = SubResource("RectangleShape2D_8mqsp")
+debug_color = Color(1, 1, 0, 0.41960785)
+
+[node name="Entitie Spawners" type="Node2D" parent="." unique_id=1268249792]
+
+[node name="Components" type="Node" parent="." unique_id=888963367]
+
+[node name="BoardComponent" type="Node" parent="Components" unique_id=1214815575]
+script = ExtResource("2_sspuk")
+metadata/_custom_type_script = "uid://xncmioquk3uk"
+
+[node name="BoardAnimatorComponent" type="Node" parent="Components" unique_id=1329299732 node_paths=PackedStringArray("board") groups=["Board Animator"]]
+script = ExtResource("3_bs78j")
+board = NodePath("../..")
+metadata/_custom_type_script = "uid://cifeyj1aiblhf"
+
+[node name="Player" parent="." unique_id=108686648 instance=ExtResource("4_xqylc")]
+position = Vector2(0, 160)
+
+[node name="Intruder" parent="." unique_id=643391249 instance=ExtResource("5_8n0xe")]
+position = Vector2(0, -128)

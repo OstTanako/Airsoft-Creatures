@@ -1,7 +1,5 @@
 72322a848ab928aa5c89f0cb78209805
-::res://::1774363545
-export_presets.cfg::TextFile::-1::1774359181::0::1::::<><><>0<>0<><>::
-README.md::TextFile::-1::1774356857::0::1::::<><><>0<>0<><>::
+::res://::1774373144
 ::res://addons/::1774361256
 ::res://addons/trail_2d/::1774361256
 icon.svg::CompressedTexture2D::961055436771160085::1774361256::1774361256::1::::<><><>0<>0<>8f1b8f6fe68d3f4328ddcd6d9193266a<>res://.godot/imported/icon.svg-66a4d9de72e94709c46cc8d517aa7993.ctex::
@@ -9,17 +7,30 @@ plugin.cfg::TextFile::-1::1774361256::0::1::::<><><>0<>0<><>::
 test.tscn::PackedScene::3600885721114100154::1774361256::0::1::::<><><>0<>0<><>::res://addons/trail_2d/trail_2d.gd
 trail_2d.gd::GDScript::1635035501515198775::1774361256::0::1::::<>Line2D<><>0<>0<><>::
 trail_2d_plugin.gd::GDScript::7344964367544843902::1774361256::0::1::::<>EditorPlugin<><>0<>1<><>::
-::res://Assets/::1774363559
-::res://Assets/Game Branding/::1774363647
+::res://Assets/::1774363689
+::res://Assets/Game Branding/::1774363649
 ac_logo.png::CompressedTexture2D::8160807269673027453::1774356857::1774356886::1::::<><><>0<>0<>3311d97eef71b154fa68c110db8b54d7<>res://.godot/imported/ac_logo.png-940bf0dbeb7c110f95177f78b0bb554e.ctex::
 ac_logo_highscale.png::CompressedTexture2D::8829454763861091149::1774356857::1774356887::1::::<><><>0<>0<>8b94a0b9380cb70674633d7c3a5ad826<>res://.godot/imported/ac_logo_highscale.png-4498e8f426e71c26ee29274c25087f24.ctex::
 game_banner_1.png::CompressedTexture2D::2500070190893545499::1774282875::1774363649::1::::<><><>0<>0<>e86b75bf9c0eac88ea58e41653cd365d<>res://.godot/imported/game_banner_1.png-f3eeab9492bb8777ef8b8fed7c5ae0c3.ctex::
 game_bg_1.png::CompressedTexture2D::79657902202516184::1774282930::1774363649::1::::<><><>0<>0<>cede761e5aabfeffccdf384fb2b11abe<>res://.godot/imported/game_bg_1.png-50db7f1f75d6879546d9c6af2c5b79c6.ctex::
 ::res://Assets/Gameplay Skins/::1774362437
 skn_recoded.png::CompressedTexture2D::4995739006688620350::1774356857::1774356886::1::::<><><>0<>0<>b2f2f7cf453d95d2b1228cbed29b5489<>res://.godot/imported/skn_recoded.png-493fbdcc5fec835037200939a4c39ffe.ctex::
-::res://Assets/Millaceanous/::1774356886
-icon.svg::CompressedTexture2D::3666623617025996124::1774356857::1774356886::1::::<><><>0<>0<>11d01023c0c3c02263fd39efe678312a<>res://.godot/imported/icon.svg-9fa6b11655e5c200a07dc31c496d599a.ctex::
-::res://Assets/Textures/::1774356886
-neutral_light_texture.webp::CompressedTexture2D::1155531583537921590::1774356857::1774356886::1::::<><><>0<>0<>d66485ac592e9601e4f6ecec9ec171da<>res://.godot/imported/neutral_light_texture.webp-9506131693e5679161c2ae47853a8980.ctex::
-::res://Scenes/::1774363536
-main.tscn::PackedScene::4786823305601775562::1774363536::0::1::::<><><>0<>0<><>::
+::res://Scenes/::1774370919
+main.tscn::PackedScene::4786823305601775562::1774370919::0::1::::<><><>0<>0<><>::uid://7e4evomgrtuu::::res://Scenes/Gameplay/Board/guideline-board.tscn<>uid://b81adi5mlbecl::::res://Scenes/Gameplay/Entities/player.tscn
+::res://Scenes/Gameplay/::1774372530
+::res://Scenes/Gameplay/Board/::1774373095
+guideline-board.tscn::PackedScene::2256069568570671216::1774373095::0::1::::<><><>0<>0<><>::uid://cdf8dd3oky7p7::::res://Assets/Gameplay Skins/skn_recoded.png<>uid://xncmioquk3uk::::res://Scripts/Components/Gameplay Components/Board Components/board_component.gd<>uid://cifeyj1aiblhf::::res://Scripts/Components/Gameplay Components/Board Components/board_animator.gd
+::res://Scenes/Gameplay/Entities/::1774372861
+player.tscn::PackedScene::4756332169826341015::1774372861::0::1::::<><><>0<>0<><>::uid://cdf8dd3oky7p7::::res://Assets/Gameplay Skins/skn_recoded.png<>uid://bmn0nhwb1g1j5::::res://Scripts/Components/Gameplay Components/Player Components/player_input.gd<>uid://dcxwib0d8osyc::::res://Scripts/Components/Gameplay Components/Player Components/player_gun.gd<>uid://b53hw1skaqe50::::res://Scenes/Gameplay/Extra/obj_bullet.tscn
+::res://Scenes/Gameplay/Extra/::1774372958
+obj_bullet.tscn::PackedScene::4550354270231591269::1774372958::0::1::::<><><>0<>0<><>::uid://cdf8dd3oky7p7::::res://Assets/Gameplay Skins/skn_recoded.png<>uid://c3a0rxqasx5nn::::res://Scripts/Components/Gameplay Components/Player Components/player_bullet.gd
+::res://Scripts/::1774367959
+::res://Scripts/Components/::1774367981
+::res://Scripts/Components/Gameplay Components/::1774369348
+::res://Scripts/Components/Gameplay Components/Board Components/::1774369292
+board_animator.gd::GDScript::5344960245171352487::1774369292::0::1::::BoardAnimatorComponent<>Node<><>0<>0<><>::
+board_component.gd::GDScript::1641323620558096178::1774368124::0::1::::BoardComponent<>Node<><>0<>0<><>::
+::res://Scripts/Components/Gameplay Components/Player Components/::1774372861
+player_bullet.gd::GDScript::6739678505345570839::1774372861::0::1::::PlayerBulletComponent<>Node<><>0<>0<><>::
+player_gun.gd::GDScript::7348470578215281946::1774372486::0::1::::PlayerGunComponent<>Node<><>0<>0<><>::
+player_input.gd::GDScript::3257065260021786536::1774371673::0::1::::PlayerInputComponent<>Node<><>0<>0<><>::
