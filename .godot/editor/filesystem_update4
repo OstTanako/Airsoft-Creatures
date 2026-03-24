@@ -1,10 +1,14 @@
-res://Scenes/Gameplay/Extra/obj_bullet.tscn
-res://Scripts/Components/Gameplay Components/Intruder Components/intruder_ai.gd
 res://Scenes/Gameplay/Entities/intruder.tscn
-res://Scenes/main.tscn
-res://Scenes/Gameplay/Entities/player.tscn
-res://Scripts/Components/Gameplay Components/Player Components/player_input.gd
+res://Scripts/Components/Gameplay Components/Intruder Components/intruder_ai.gd
+res://Scripts/Components/Gameplay Components/Board Components/board_component.gd
 res://Scenes/Gameplay/Board/guideline-board.tscn
-res://Scripts/Components/Gameplay Components/Board Components/board_animator.gd
+res://Scenes/Gameplay/Extra/obj_bullet.tscn
 res://Scripts/Components/Gameplay Components/Player Components/player_bullet.gd
+res://Scenes/main.tscn
+res://Scripts/Components/Gameplay Components/Player Components/player_input.gd
+res://Scripts/Components/Gameplay Components/Board Components/board_animator.gd
 res://Scripts/Components/Gameplay Components/Player Components/player_gun.gd
+res://Scenes/User Interface/UI Stats.tscn
+res://Themes/board_theme.tres
+res://Scenes/User Interface/UI Elements/game_time.tscn
+res://Scripts/Components/UI Components/game_time.gd

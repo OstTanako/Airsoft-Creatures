@@ -5,7 +5,9 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cfclk"]
 
-[node name="Intruder" type="CharacterBody2D" unique_id=643391249]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ybucf"]
+
+[node name="Intruder" type="CharacterBody2D" unique_id=643391249 groups=["Intruder"]]
 
 [node name="Intruder Sprite" type="Sprite2D" parent="." unique_id=958687985]
 modulate = Color(1, 0, 0, 1)
@@ -15,12 +17,14 @@ hframes = 4
 vframes = 3
 frame = 7
 
-[node name="Eraser Cast" type="RayCast2D" parent="." unique_id=152818418]
-target_position = Vector2(0, 24)
-
 [node name="Shape 2D" type="CollisionShape2D" parent="." unique_id=1548630574]
 shape = SubResource("RectangleShape2D_cfclk")
 debug_color = Color(1, 0, 0, 0.41960785)
+
+[node name="Eraser Area" type="Area2D" parent="." unique_id=2066328966]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Eraser Area" unique_id=1287001583]
+shape = SubResource("RectangleShape2D_ybucf")
 
 [node name="Intruder Timers" type="Node" parent="." unique_id=2052283060]
 
@@ -29,9 +33,9 @@ one_shot = true
 
 [node name="Intruder Components" type="Node" parent="." unique_id=1206643889]
 
-[node name="IntruderAIComponent" type="Node" parent="Intruder Components" unique_id=631084112 node_paths=PackedStringArray("intruder", "eraser_cast", "move_delay")]
+[node name="IntruderAIComponent" type="Node" parent="Intruder Components" unique_id=631084112 node_paths=PackedStringArray("intruder", "eraser_area", "move_delay")]
 script = ExtResource("2_ybucf")
 intruder = NodePath("../..")
-eraser_cast = NodePath("../../Eraser Cast")
+eraser_area = NodePath("../../Eraser Area")
 move_delay = NodePath("../../Intruder Timers/Move Delay")
 metadata/_custom_type_script = "uid://cbjliljaflw5c"

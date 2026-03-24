@@ -230,6 +230,9 @@ size = Vector2(160, 96)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8mqsp"]
 size = Vector2(160, 64)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xqylc"]
+size = Vector2(160, 160)
+
 [node name="GuidelineBoard" type="Node2D" unique_id=1795045438]
 
 [node name="Board Stucture" type="Node2D" parent="." unique_id=22244448]
@@ -240,7 +243,7 @@ tile_map_data = PackedByteArray("AAD/////AAAAAAAAAAD//wAAAAAAAAEAAAAAAP//AAABAAA
 tile_set = SubResource("TileSet_bs78j")
 
 [node name="Board Limit Area" type="TileMapLayer" parent="Board Stucture" unique_id=1639220888]
-modulate = Color(1, 1, 1, 0.11764706)
+modulate = Color(1, 1, 0, 0.11764706)
 tile_map_data = PackedByteArray("AAD7/wkAAAACAAAAAAD7/woAAAACAAEAAAD8/wkAAAADAAAAAAD8/woAAAADAAEAAAD7/wcAAAACAAAAAAD7/wgAAAACAAEAAAD8/wcAAAADAAAAAAD8/wgAAAADAAEAAAD9/wcAAAACAAAAAAD9/wgAAAACAAEAAAD+/wcAAAADAAAAAAD+/wgAAAADAAEAAAD//wcAAAACAAAAAAD//wgAAAACAAEAAAAAAAcAAAADAAAAAAAAAAgAAAADAAEAAAABAAcAAAACAAAAAAABAAgAAAACAAEAAAACAAcAAAADAAAAAAACAAgAAAADAAEAAAADAAcAAAACAAAAAAADAAgAAAACAAEAAAAEAAcAAAADAAAAAAAEAAgAAAADAAEAAAADAAkAAAACAAAAAAADAAoAAAACAAEAAAAEAAkAAAADAAAAAAAEAAoAAAADAAEAAAABAAkAAAACAAAAAAABAAoAAAACAAEAAAACAAkAAAADAAAAAAACAAoAAAADAAEAAAD//wkAAAACAAAAAAD//woAAAACAAEAAAAAAAkAAAADAAAAAAAAAAoAAAADAAEAAAD9/wkAAAACAAAAAAD9/woAAAACAAEAAAD+/wkAAAADAAAAAAD+/woAAAADAAEAAAA=")
 tile_set = SubResource("TileSet_xqylc")
 
@@ -259,6 +262,7 @@ tile_map_data = PackedByteArray("AAD7//f/AAAEAAAAAAD7//j/AAAEAAEAAAD8//f/AAAFAAA
 tile_set = SubResource("TileSet_p8l64")
 
 [node name="Areas + Collisions" type="Node2D" parent="." unique_id=1112867171]
+visible = false
 
 [node name="Barriers" type="StaticBody2D" parent="Areas + Collisions" unique_id=196781562]
 
@@ -277,19 +281,30 @@ position = Vector2(0, -208)
 shape = SubResource("RectangleShape2D_ypm3f")
 debug_color = Color(1.01074575e-05, 0.98847336, 0.5858324, 0.41960785)
 
-[node name="Player Area" type="StaticBody2D" parent="Areas + Collisions" unique_id=9671385]
+[node name="Limit Area" type="Area2D" parent="Areas + Collisions" unique_id=1718472224]
 
-[node name="Shape 2D" type="CollisionShape2D" parent="Areas + Collisions/Player Area" unique_id=1726011011]
+[node name="Shape 2D" type="CollisionShape2D" parent="Areas + Collisions/Limit Area" unique_id=1726011011]
 position = Vector2(0, 144)
 shape = SubResource("RectangleShape2D_8mqsp")
 debug_color = Color(1, 1, 0, 0.41960785)
+
+[node name="Warning Area" type="Area2D" parent="Areas + Collisions" unique_id=1292599213]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Areas + Collisions/Warning Area" unique_id=169147444]
+position = Vector2(0, 96)
+shape = SubResource("RectangleShape2D_xqylc")
+debug_color = Color(0.986103, 0, 0.33178437, 0.41960785)
 
 [node name="Entitie Spawners" type="Node2D" parent="." unique_id=1268249792]
 
 [node name="Components" type="Node" parent="." unique_id=888963367]
 
-[node name="BoardComponent" type="Node" parent="Components" unique_id=1214815575]
+[node name="BoardComponent" type="Node" parent="Components" unique_id=1214815575 node_paths=PackedStringArray("board", "limit_area", "warning_area", "board_animator")]
 script = ExtResource("2_sspuk")
+board = NodePath("../..")
+limit_area = NodePath("../../Areas + Collisions/Limit Area")
+warning_area = NodePath("../../Areas + Collisions/Warning Area")
+board_animator = NodePath("../BoardAnimatorComponent")
 metadata/_custom_type_script = "uid://xncmioquk3uk"
 
 [node name="BoardAnimatorComponent" type="Node" parent="Components" unique_id=1329299732 node_paths=PackedStringArray("board") groups=["Board Animator"]]

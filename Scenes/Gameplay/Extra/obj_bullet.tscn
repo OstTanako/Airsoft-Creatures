@@ -3,7 +3,13 @@
 [ext_resource type="Texture2D" uid="uid://cdf8dd3oky7p7" path="res://Assets/Gameplay Skins/skn_recoded.png" id="1_vn30o"]
 [ext_resource type="Script" uid="uid://c3a0rxqasx5nn" path="res://Scripts/Components/Gameplay Components/Player Components/player_bullet.gd" id="2_vapn3"]
 
-[node name="OBJ Bullet" type="CharacterBody2D" unique_id=1137960808]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vn30o"]
+size = Vector2(8, 8)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vapn3"]
+size = Vector2(8, 8)
+
+[node name="OBJ Bullet" type="CharacterBody2D" unique_id=1137960808 groups=["Player Bullet"]]
 
 [node name="Bullet Sprite" type="Sprite2D" parent="." unique_id=105471401]
 modulate = Color(1, 1, 0, 1)
@@ -13,9 +19,16 @@ hframes = 4
 vframes = 3
 frame = 9
 
-[node name="Eraser Cast" type="RayCast2D" parent="." unique_id=858811707]
-exclude_parent = false
+[node name="Eraser Cast" type="RayCast2D" parent="." unique_id=1856307392]
 target_position = Vector2(0, -16)
+
+[node name="Shape 2D" type="CollisionShape2D" parent="." unique_id=79713452]
+shape = SubResource("RectangleShape2D_vn30o")
+
+[node name="Eraser Area" type="Area2D" parent="." unique_id=836681725]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Eraser Area" unique_id=1184881630]
+shape = SubResource("RectangleShape2D_vapn3")
 
 [node name="Bullet Timers" type="Node" parent="." unique_id=1713073755]
 
@@ -25,9 +38,10 @@ one_shot = true
 
 [node name="Bullet Components" type="Node" parent="." unique_id=2019398334]
 
-[node name="PlayerBulletComponent" type="Node" parent="Bullet Components" unique_id=1082084172 node_paths=PackedStringArray("bullet", "eraser_cast", "move_delay")]
+[node name="PlayerBulletComponent" type="Node" parent="Bullet Components" unique_id=1082084172 node_paths=PackedStringArray("bullet", "eraser_area", "eraser_cast", "move_delay")]
 script = ExtResource("2_vapn3")
 bullet = NodePath("../..")
+eraser_area = NodePath("../../Eraser Area")
 eraser_cast = NodePath("../../Eraser Cast")
 move_delay = NodePath("../../Bullet Timers/Move Delay")
 metadata/_custom_type_script = "uid://c3a0rxqasx5nn"

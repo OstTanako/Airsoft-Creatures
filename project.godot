@@ -17,11 +17,6 @@ run/main_scene="uid://cag1jsh8avm15"
 config/features=PackedStringArray("4.6", "Forward Plus")
 run/max_fps=60
 
-[debug]
-
-settings/stdout/print_fps=true
-settings/stdout/print_gpu_profile=true
-
 [display]
 
 window/size/mode=4
@@ -44,8 +39,10 @@ folder_colors={
 [global_group]
 
 "Limit Line / Player Area"=""
-"Board Pinner"=""
-"Board Animator"=""
+"Board Pinner"="Makes the simple Marker into a board pin."
+"Board Animator"="References the BoardAnimatorComponent."
+Intruder="Indentifies any harmful entitie"
+"Player Bullet"="References the Player`s bullet."
 
 [input]
 

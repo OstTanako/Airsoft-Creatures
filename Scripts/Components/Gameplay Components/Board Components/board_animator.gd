@@ -11,7 +11,7 @@ func _rotate_board(rot : float) -> void:
 	tw.tween_property(board, "rotation_degrees", rot, 0.2)
 
 func _bounce_board(pos : Vector2) -> void:
-	var tw = create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_ELASTIC)
+	var tw = create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
 	tw.tween_property(board, "position", pos, 0.2).as_relative()
 	
 	await  tw.finished
@@ -31,5 +31,5 @@ func _scale_board(scaly : Vector2) -> void:
 func _bounce_board_reset() -> void:
 	var pin = get_tree().get_first_node_in_group("Board Pinner")
 	
-	var tw = create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_ELASTIC)
+	var tw = create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
 	tw.tween_property(board, "position", pin.global_position, 0.2)
