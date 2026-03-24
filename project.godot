@@ -1,0 +1,66 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Airsoft Creatures RE-CODED"
+config/description="Airsoft Creatures is back! and more better!!"
+config/version="0.0.0dev"
+run/main_scene="uid://cag1jsh8avm15"
+config/features=PackedStringArray("4.6", "Forward Plus")
+run/max_fps=60
+
+[autoload]
+
+Global="*uid://dqap3s3muhh8h"
+
+[debug]
+
+settings/stdout/print_fps=true
+settings/stdout/print_gpu_profile=true
+
+[display]
+
+window/size/mode=4
+window/size/resizable=false
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/trail_2d/plugin.cfg")
+
+[global_group]
+
+"Limit Line / Player Area"=""
+"Board Pin"=""
+"Board Animator"=""
+
+[layer_names]
+
+2d_physics/layer_1="None"
+2d_physics/layer_2="Player"
+2d_physics/layer_3="Enemy"
+2d_physics/layer_4="Map"
+2d_physics/layer_5="Player [ Bullet ]"
+2d_physics/layer_6="Map [ Limit Line ]"
+2d_physics/layer_7="Map [ Warning Line ]"
+2d_physics/layer_8="Map [ Bullet Eraser ]"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+rendering_device/driver.windows="d3d12"
+textures/vram_compression/import_etc2_astc=true
+viewport/hdr_2d=true

@@ -1,0 +1,12 @@
+res://Scenes/Gameplay/Entities/intruder.tscn
+res://Scenes/main.tscn
+res://Scripts/Components/Gameplay/Entities/intruder_component.gd
+res://Scenes/Gameplay/Entities/player.tscn
+res://Scenes/Gameplay/Game Maps/map_guideline.tscn
+res://Scenes/Gameplay/Entities/enemy.tscn
+res://Scripts/Components/Gameplay/Spawners/intruder_spawner.gd
+res://Scripts/Components/Gameplay/Entities/player_controller.gd
+res://Scripts/Components/Gameplay/Entities/player_gun.gd
+res://Scripts/Components/Gameplay/Board/board_component.gd
+res://Scripts/Components/Gameplay/Board/board_animator.gd
+res://Scripts/Components/Gameplay/Spawners/player_spawner.gd
