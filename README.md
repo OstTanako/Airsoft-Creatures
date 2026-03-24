@@ -20,4 +20,10 @@ Once you installed git (or you alearly installed it), open your terminal and cop
 git clone https://github.com/OstTanako/Airsoft-Creatures.git
 ```
 
-**NOTE: Acess your destined path first.**
+**NOTE: Acess your destined path first before you clone**
+
+```bash
+cd /your/destinated/path/here
+```
+
+**NOTE: Some addons / plugins, fonts can have different licenses.**
