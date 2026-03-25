@@ -19,6 +19,8 @@ run/max_fps=60
 
 [display]
 
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 window/size/mode=4
 window/size/resizable=false
 window/stretch/mode="viewport"
@@ -74,6 +76,7 @@ Shoot={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+textures/canvas_textures/default_texture_repeat=1
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"

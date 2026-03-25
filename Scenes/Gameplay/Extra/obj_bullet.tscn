@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://b53hw1skaqe50"]
 
+[ext_resource type="Texture2D" uid="uid://cfjj3d5i7mn1a" path="res://Assets/Textures/2d_light_texture.webp" id="1_vapn3"]
 [ext_resource type="Texture2D" uid="uid://cdf8dd3oky7p7" path="res://Assets/Gameplay Skins/skn_recoded.png" id="1_vn30o"]
 [ext_resource type="Script" uid="uid://c3a0rxqasx5nn" path="res://Scripts/Components/Gameplay Components/Player Components/player_bullet.gd" id="2_vapn3"]
 
@@ -10,6 +11,10 @@ size = Vector2(12, 11)
 size = Vector2(12, 12)
 
 [node name="OBJ Bullet" type="CharacterBody2D" unique_id=1137960808 groups=["Player Bullet"]]
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=2088689977]
+color = Color(1, 1, 0, 1)
+texture = ExtResource("1_vapn3")
 
 [node name="Bullet Sprite" type="Sprite2D" parent="." unique_id=105471401]
 modulate = Color(1, 1, 0, 1)

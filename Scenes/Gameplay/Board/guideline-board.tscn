@@ -1,14 +1,11 @@
 [gd_scene format=4 uid="uid://7e4evomgrtuu"]
 
 [ext_resource type="Texture2D" uid="uid://cdf8dd3oky7p7" path="res://Assets/Gameplay Skins/skn_recoded.png" id="1_fgcsm"]
-[ext_resource type="Texture2D" uid="uid://cq700ryuqm3x2" path="res://Assets/Gameplay Skins/Icon Skins/recoded_alert.png" id="2_8n0xe"]
 [ext_resource type="Script" uid="uid://xncmioquk3uk" path="res://Scripts/Components/Gameplay Components/Board Components/board_component.gd" id="2_sspuk"]
 [ext_resource type="Script" uid="uid://cifeyj1aiblhf" path="res://Scripts/Components/Gameplay Components/Board Components/board_animator.gd" id="3_bs78j"]
-[ext_resource type="Texture2D" uid="uid://c0xug8o6jlayi" path="res://Assets/Gameplay Skins/Icon Skins/stats_triangle.png" id="3_fq5lo"]
-[ext_resource type="FontFile" uid="uid://el7r0pgv0b5p" path="res://Assets/Fonts/Font Files/tazaito-fontto.otf" id="3_gyj51"]
 [ext_resource type="Script" uid="uid://c2ud63h5hrlg6" path="res://Scripts/Components/Gameplay Components/Player Components/player_spawner.gd" id="3_hlaqj"]
-[ext_resource type="Texture2D" uid="uid://cjmds6kqm4hth" path="res://Assets/Textures/hud_grandient.png" id="3_liugp"]
 [ext_resource type="Script" uid="uid://byi3wcswaxvny" path="res://Scripts/Components/Gameplay Components/Intruder Components/intruder_component.gd" id="4_fq5lo"]
+[ext_resource type="PackedScene" uid="uid://b81adi5mlbecl" path="res://Scenes/Gameplay/Entities/player.tscn" id="6_8n0xe"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sspuk"]
 texture = ExtResource("1_fgcsm")
@@ -237,78 +234,19 @@ size = Vector2(160, 64)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xqylc"]
 size = Vector2(160, 160)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8n0xe"]
+bg_color = Color(0, 0, 0, 1)
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(3, 3)
+anti_aliasing_size = 0.01
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gyj51"]
-bg_color = Color(1, 0, 0, 1)
-expand_margin_left = 4.0
-expand_margin_right = 4.0
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fq5lo"]
-bg_color = Color(0, 1, 1, 1)
-expand_margin_left = 4.0
-expand_margin_right = 4.0
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hlaqj"]
-bg_color = Color(1, 1, 0, 1)
-expand_margin_left = 4.0
-expand_margin_right = 4.0
-
-[sub_resource type="Animation" id="Animation_liugp"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Board Stucture/HudGrandient:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 0, 0, 0)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_p8l64"]
-_data = {
-&"RESET": SubResource("Animation_liugp")
-}
-
-[sub_resource type="Animation" id="Animation_m3dow"]
-resource_name = "Warning Gradient End"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Board Stucture/HudGrandient:modulate")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.001, 1),
-"transitions": PackedFloat32Array(2, 2),
-"update": 0,
-"values": [Color(1, 0, 0, 1), Color(1, 0, 0, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_ypm3f"]
-resource_name = "Warning Gradient Loop"
-length = 2.0
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Board Stucture/HudGrandient:modulate")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1, 2),
-"transitions": PackedFloat32Array(0.5, 1, 2),
-"update": 0,
-"values": [Color(1, 0, 0, 0), Color(1, 0, 0, 1), Color(1, 0, 0, 0)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_8mqsp"]
-_data = {
-&"Warning Gradient End": SubResource("Animation_m3dow"),
-&"Warning Gradient Loop": SubResource("Animation_ypm3f")
-}
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
 
 [node name="GuidelineBoard" type="Node2D" unique_id=1795045438]
 
@@ -318,18 +256,6 @@ _data = {
 modulate = Color(1, 1, 1, 0.5254902)
 tile_map_data = PackedByteArray("AAD/////AAAAAAAAAAD//wAAAAAAAAEAAAAAAP//AAABAAAAAAAAAAAAAAABAAEAAAABAP//AAAAAAAAAAABAAAAAAAAAAEAAAACAP//AAABAAAAAAACAAAAAAABAAEAAAD9////AAAAAAAAAAD9/wAAAAAAAAEAAAD+////AAABAAAAAAD+/wAAAAABAAEAAAD7////AAAAAAAAAAD7/wAAAAAAAAEAAAD8////AAABAAAAAAD8/wAAAAABAAEAAAADAP//AAAAAAAAAAADAAAAAAAAAAEAAAAEAP//AAABAAAAAAAEAAAAAAABAAEAAAD7/wEAAAAAAAAAAAD7/wIAAAAAAAEAAAD8/wEAAAABAAAAAAD8/wIAAAABAAEAAAD7/wMAAAAAAAAAAAD7/wQAAAAAAAEAAAD8/wMAAAABAAAAAAD8/wQAAAABAAEAAAD7/wUAAAAAAAAAAAD7/wYAAAAAAAEAAAD8/wUAAAABAAAAAAD8/wYAAAABAAEAAAD7/wcAAAAAAAAAAAD7/wgAAAAAAAEAAAD8/wcAAAABAAAAAAD8/wgAAAABAAEAAAADAP3/AAAAAAAAAAADAP7/AAAAAAEAAAAEAP3/AAABAAAAAAAEAP7/AAABAAEAAAADAPv/AAAAAAAAAAADAPz/AAAAAAEAAAAEAPv/AAABAAAAAAAEAPz/AAABAAEAAAADAPn/AAAAAAAAAAADAPr/AAAAAAEAAAAEAPn/AAABAAAAAAAEAPr/AAABAAEAAAADAPf/AAAAAAAAAAADAPj/AAAAAAEAAAAEAPf/AAABAAAAAAAEAPj/AAABAAEAAAD9/wcAAAAAAAAAAAD9/wgAAAAAAAEAAAD+/wcAAAABAAAAAAD+/wgAAAABAAEAAAD//wcAAAAAAAAAAAD//wgAAAAAAAEAAAAAAAcAAAABAAAAAAAAAAgAAAABAAEAAAABAAcAAAAAAAAAAAABAAgAAAAAAAEAAAACAAcAAAABAAAAAAACAAgAAAABAAEAAAADAAcAAAAAAAAAAAADAAgAAAAAAAEAAAAEAAcAAAABAAAAAAAEAAgAAAABAAEAAAADAAUAAAAAAAAAAAADAAYAAAAAAAEAAAAEAAUAAAABAAAAAAAEAAYAAAABAAEAAAADAAMAAAAAAAAAAAADAAQAAAAAAAEAAAAEAAMAAAABAAAAAAAEAAQAAAABAAEAAAADAAEAAAAAAAAAAAADAAIAAAAAAAEAAAAEAAEAAAABAAAAAAAEAAIAAAABAAEAAAABAAEAAAAAAAAAAAABAAIAAAAAAAEAAAACAAEAAAABAAAAAAACAAIAAAABAAEAAAD//wEAAAAAAAAAAAD//wIAAAAAAAEAAAAAAAEAAAABAAAAAAAAAAIAAAABAAEAAAD9/wMAAAAAAAAAAAD9/wQAAAAAAAEAAAD+/wMAAAABAAAAAAD+/wQAAAABAAEAAAD9/wUAAAAAAAAAAAD9/wYAAAAAAAEAAAD+/wUAAAABAAAAAAD+/wYAAAABAAEAAAD//wUAAAAAAAAAAAD//wYAAAAAAAEAAAAAAAUAAAABAAAAAAAAAAYAAAABAAEAAAABAAUAAAAAAAAAAAABAAYAAAAAAAEAAAACAAUAAAABAAAAAAACAAYAAAABAAEAAAABAAMAAAAAAAAAAAABAAQAAAAAAAEAAAACAAMAAAABAAAAAAACAAQAAAABAAEAAAD//wMAAAAAAAAAAAD//wQAAAAAAAEAAAAAAAMAAAABAAAAAAAAAAQAAAABAAEAAAD9/wEAAAAAAAAAAAD9/wIAAAAAAAEAAAD+/wEAAAABAAAAAAD+/wIAAAABAAEAAAD7//3/AAAAAAAAAAD7//7/AAAAAAEAAAD8//3/AAABAAAAAAD8//7/AAABAAEAAAD7//v/AAAAAAAAAAD7//z/AAAAAAEAAAD8//v/AAABAAAAAAD8//z/AAABAAEAAAD7//n/AAAAAAAAAAD7//r/AAAAAAEAAAD8//n/AAABAAAAAAD8//r/AAABAAEAAAD9//n/AAAAAAAAAAD9//r/AAAAAAEAAAD+//n/AAABAAAAAAD+//r/AAABAAEAAAD9//f/AAAAAAAAAAD9//j/AAAAAAEAAAD+//f/AAABAAAAAAD+//j/AAABAAEAAAD7//f/AAAAAAAAAAD7//j/AAAAAAEAAAD8//f/AAABAAAAAAD8//j/AAABAAEAAAD///f/AAAAAAAAAAD///j/AAAAAAEAAAAAAPf/AAABAAAAAAAAAPj/AAABAAEAAAABAPf/AAAAAAAAAAABAPj/AAAAAAEAAAACAPf/AAABAAAAAAACAPj/AAABAAEAAAABAPn/AAAAAAAAAAABAPr/AAAAAAEAAAACAPn/AAABAAAAAAACAPr/AAABAAEAAAD///n/AAAAAAAAAAD///r/AAAAAAEAAAAAAPn/AAABAAAAAAAAAPr/AAABAAEAAAD///v/AAAAAAAAAAD///z/AAAAAAEAAAAAAPv/AAABAAAAAAAAAPz/AAABAAEAAAD///3/AAAAAAAAAAD///7/AAAAAAEAAAAAAP3/AAABAAAAAAAAAP7/AAABAAEAAAD9//3/AAAAAAAAAAD9//7/AAAAAAEAAAD+//3/AAABAAAAAAD+//7/AAABAAEAAAD9//v/AAAAAAAAAAD9//z/AAAAAAEAAAD+//v/AAABAAAAAAD+//z/AAABAAEAAAABAPv/AAAAAAAAAAABAPz/AAAAAAEAAAACAPv/AAABAAAAAAACAPz/AAABAAEAAAABAP3/AAAAAAAAAAABAP7/AAAAAAEAAAACAP3/AAABAAAAAAACAP7/AAABAAEAAAD7/wkAAAAAAAAAAAD7/woAAAAAAAEAAAD8/wkAAAABAAAAAAD8/woAAAABAAEAAAD9/wkAAAAAAAAAAAD9/woAAAAAAAEAAAD+/wkAAAABAAAAAAD+/woAAAABAAEAAAD//wkAAAAAAAAAAAD//woAAAAAAAEAAAAAAAkAAAABAAAAAAAAAAoAAAABAAEAAAABAAkAAAAAAAAAAAABAAoAAAAAAAEAAAACAAkAAAABAAAAAAACAAoAAAABAAEAAAADAAkAAAAAAAAAAAADAAoAAAAAAAEAAAAEAAkAAAABAAAAAAAEAAoAAAABAAEAAAA=")
 tile_set = SubResource("TileSet_bs78j")
-
-[node name="Alert Icon" type="Sprite2D" parent="Board Stucture" unique_id=452243569]
-modulate = Color(1, 1, 1, 0.15686275)
-position = Vector2(-6.198883e-06, -2.0000014)
-scale = Vector2(4.9999995, 4.8749995)
-texture = ExtResource("2_8n0xe")
-
-[node name="HudGrandient" type="Sprite2D" parent="Board Stucture" unique_id=1187251175]
-modulate = Color(1, 0, 0, 0)
-position = Vector2(-7.6293945e-06, 15.999992)
-scale = Vector2(0.07812499, 0.20833331)
-texture = ExtResource("3_liugp")
 
 [node name="Board Limit Area" type="TileMapLayer" parent="Board Stucture" unique_id=1639220888]
 modulate = Color(1, 1, 0, 0.11764706)
@@ -359,7 +285,7 @@ position = Vector2(-96, 160)
 shape = SubResource("RectangleShape2D_m3dow")
 
 [node name="Barrier 2" type="CollisionShape2D" parent="Areas + Collisions/Barriers" unique_id=910750561]
-position = Vector2(97, 160)
+position = Vector2(96, 160)
 shape = SubResource("RectangleShape2D_m3dow")
 
 [node name="Bullet Eraser" type="StaticBody2D" parent="Areas + Collisions" unique_id=2127438190]
@@ -393,138 +319,26 @@ metadata/_custom_type_script = "uid://c2ud63h5hrlg6"
 [node name="IntruderSpawnerComponent" type="Marker2D" parent="Entitie Spawners" unique_id=939451296]
 position = Vector2(0, -128)
 script = ExtResource("4_fq5lo")
-freeze_spawner = true
 metadata/_custom_type_script = "uid://byi3wcswaxvny"
 
 [node name="IntruderSpawnerComponent2" type="Marker2D" parent="Entitie Spawners" unique_id=431679064]
 position = Vector2(64, -96)
 script = ExtResource("4_fq5lo")
-freeze_spawner = true
 metadata/_custom_type_script = "uid://byi3wcswaxvny"
 
 [node name="IntruderSpawnerComponent3" type="Marker2D" parent="Entitie Spawners" unique_id=257904504]
 position = Vector2(-64, -64)
 script = ExtResource("4_fq5lo")
-freeze_spawner = true
 metadata/_custom_type_script = "uid://byi3wcswaxvny"
-
-[node name="GameStats" type="Node2D" parent="." unique_id=504902135]
-
-[node name="VBoxContainer" type="VBoxContainer" parent="GameStats" unique_id=956834792]
-offset_left = -145.0
-offset_top = -144.0
-offset_right = -92.0
-offset_bottom = -104.0
-
-[node name="Intruder Container" type="HBoxContainer" parent="GameStats/VBoxContainer" unique_id=1553165865]
-layout_mode = 2
-
-[node name="TextureRect" type="TextureRect" parent="GameStats/VBoxContainer/Intruder Container" unique_id=1420813489]
-modulate = Color(1, 0, 0, 1)
-custom_minimum_size = Vector2(16, 0)
-layout_mode = 2
-texture = ExtResource("3_fq5lo")
-expand_mode = 1
-
-[node name="Intruders Container" type="PanelContainer" parent="GameStats/VBoxContainer/Intruder Container" unique_id=1480699096]
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_gyj51")
-
-[node name="Container H" type="HBoxContainer" parent="GameStats/VBoxContainer/Intruder Container/Intruders Container" unique_id=129239165]
-layout_mode = 2
-alignment = 2
-
-[node name="Intruders Label" type="Label" parent="GameStats/VBoxContainer/Intruder Container/Intruders Container/Container H" unique_id=1352748723]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("3_gyj51")
-theme_override_font_sizes/font_size = 10
-text = "0"
-
-[node name="Intruders Icon" type="TextureRect" parent="GameStats/VBoxContainer/Intruder Container/Intruders Container/Container H" unique_id=2123408734]
-custom_minimum_size = Vector2(16, 16)
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 4
-texture = ExtResource("2_8n0xe")
-expand_mode = 1
-
-[node name="Score Container" type="HBoxContainer" parent="GameStats/VBoxContainer" unique_id=1274647119]
-layout_mode = 2
-
-[node name="TextureRect2" type="TextureRect" parent="GameStats/VBoxContainer/Score Container" unique_id=209243865]
-modulate = Color(0, 1, 1, 1)
-custom_minimum_size = Vector2(16, 0)
-layout_mode = 2
-texture = ExtResource("3_fq5lo")
-expand_mode = 1
-
-[node name="Score Container" type="PanelContainer" parent="GameStats/VBoxContainer/Score Container" unique_id=1613223922]
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_fq5lo")
-
-[node name="Container H" type="HBoxContainer" parent="GameStats/VBoxContainer/Score Container/Score Container" unique_id=1789934333]
-layout_mode = 2
-alignment = 2
-
-[node name="Score Label" type="Label" parent="GameStats/VBoxContainer/Score Container/Score Container/Container H" unique_id=408577945]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_gyj51")
-theme_override_font_sizes/font_size = 10
-text = "0"
-
-[node name="Score Icon" type="TextureRect" parent="GameStats/VBoxContainer/Score Container/Score Container/Container H" unique_id=647775653]
-modulate = Color(0, 0, 0, 1)
-custom_minimum_size = Vector2(16, 16)
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 4
-texture = ExtResource("2_8n0xe")
-expand_mode = 1
-
-[node name="Level Container" type="HBoxContainer" parent="GameStats/VBoxContainer" unique_id=1792305546]
-layout_mode = 2
-
-[node name="TextureRect2" type="TextureRect" parent="GameStats/VBoxContainer/Level Container" unique_id=144130710]
-modulate = Color(1, 1, 0, 1)
-custom_minimum_size = Vector2(16, 0)
-layout_mode = 2
-texture = ExtResource("3_fq5lo")
-expand_mode = 1
-
-[node name="Score Container" type="PanelContainer" parent="GameStats/VBoxContainer/Level Container" unique_id=338211723]
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_hlaqj")
-
-[node name="Container H" type="HBoxContainer" parent="GameStats/VBoxContainer/Level Container/Score Container" unique_id=2064900398]
-layout_mode = 2
-alignment = 2
-
-[node name="Level Label" type="Label" parent="GameStats/VBoxContainer/Level Container/Score Container/Container H" unique_id=141470466]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_gyj51")
-theme_override_font_sizes/font_size = 10
-text = "0"
-
-[node name="Level Icon" type="TextureRect" parent="GameStats/VBoxContainer/Level Container/Score Container/Container H" unique_id=83551350]
-modulate = Color(0, 0, 0, 1)
-custom_minimum_size = Vector2(16, 16)
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 4
-texture = ExtResource("2_8n0xe")
-expand_mode = 1
 
 [node name="Components" type="Node" parent="." unique_id=888963367]
 
-[node name="BoardComponent" type="Node" parent="Components" unique_id=1214815575 node_paths=PackedStringArray("board", "limit_area", "warning_area", "board_player", "warning_icon", "board_animator")]
+[node name="BoardComponent" type="Node" parent="Components" unique_id=1214815575 node_paths=PackedStringArray("board", "limit_area", "warning_area", "limit_progress", "board_animator")]
 script = ExtResource("2_sspuk")
 board = NodePath("../..")
 limit_area = NodePath("../../Areas + Collisions/Limit Area")
 warning_area = NodePath("../../Areas + Collisions/Warning Area")
-board_player = NodePath("../../Board Player")
-warning_icon = NodePath("../../Board Stucture/Alert Icon")
+limit_progress = NodePath("../../Limit Progress")
 board_animator = NodePath("../BoardAnimatorComponent")
 metadata/_custom_type_script = "uid://xncmioquk3uk"
 
@@ -533,6 +347,16 @@ script = ExtResource("3_bs78j")
 board = NodePath("../..")
 metadata/_custom_type_script = "uid://cifeyj1aiblhf"
 
-[node name="Board Player" type="AnimationPlayer" parent="." unique_id=1965543213]
-libraries/ = SubResource("AnimationLibrary_p8l64")
-"libraries/Warning Gradient" = SubResource("AnimationLibrary_8mqsp")
+[node name="Player" parent="." unique_id=108686648 instance=ExtResource("6_8n0xe")]
+position = Vector2(0, 160)
+
+[node name="Limit Progress" type="ProgressBar" parent="." unique_id=462439595]
+offset_left = -80.0
+offset_top = 184.0
+offset_right = 80.0
+offset_bottom = 192.0
+theme_override_styles/background = SubResource("StyleBoxFlat_8n0xe")
+theme_override_styles/fill = SubResource("StyleBoxFlat_gyj51")
+max_value = 0.7
+value = 0.7
+show_percentage = false
