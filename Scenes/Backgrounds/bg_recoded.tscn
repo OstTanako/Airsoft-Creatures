@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://daeeu26bymnvl"]
+
+[ext_resource type="Texture2D" uid="uid://bwqnstp3wwaoj" path="res://Assets/Background Elements/bg_grandient.png" id="1_f4msy"]
+[ext_resource type="Shader" uid="uid://ba3mq5ljq8iam" path="res://Shaders/Background Shaders/checker_board.gdshader" id="1_yjaoy"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_f4msy"]
+shader = ExtResource("1_yjaoy")
+shader_parameter/size = 32.0000014725
+shader_parameter/color1 = Color(1, 1, 1, 0.039215688)
+shader_parameter/color2 = Color(0.69803923, 0.69803923, 0.69803923, 0)
+shader_parameter/speed = 0.50000002375
+shader_parameter/direction_x = 1.0
+shader_parameter/direction_y = 1.0
+
+[node name="BG RE-CODED" type="Control" unique_id=1897409902]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG Color" type="ColorRect" parent="." unique_id=1900053709]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="Gradient Texture" type="TextureRect" parent="." unique_id=1777526136]
+modulate = Color(1, 1, 1, 0.22352941)
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_f4msy")
+expand_mode = 1
+
+[node name="Checker Board" type="ColorRect" parent="." unique_id=557830720]
+material = SubResource("ShaderMaterial_f4msy")
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0

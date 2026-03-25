@@ -1,13 +1,19 @@
 [gd_scene format=3 uid="uid://dbfjqp7dqprae"]
 
 [ext_resource type="Texture2D" uid="uid://cdf8dd3oky7p7" path="res://Assets/Gameplay Skins/skn_recoded.png" id="1_cfclk"]
+[ext_resource type="Texture2D" uid="uid://cfjj3d5i7mn1a" path="res://Assets/Textures/2d_light_texture.webp" id="1_ybucf"]
 [ext_resource type="Script" uid="uid://cbjliljaflw5c" path="res://Scripts/Components/Gameplay Components/Intruder Components/intruder_ai.gd" id="2_ybucf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cfclk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ybucf"]
+size = Vector2(24, 24)
 
 [node name="Intruder" type="CharacterBody2D" unique_id=643391249 groups=["Intruder"]]
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=2143480340]
+color = Color(1, 0, 0, 1)
+texture = ExtResource("1_ybucf")
 
 [node name="Intruder Sprite" type="Sprite2D" parent="." unique_id=958687985]
 modulate = Color(1, 0, 0, 1)

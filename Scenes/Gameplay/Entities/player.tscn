@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://b81adi5mlbecl"]
 
+[ext_resource type="Texture2D" uid="uid://cfjj3d5i7mn1a" path="res://Assets/Textures/2d_light_texture.webp" id="1_hxtw5"]
 [ext_resource type="Texture2D" uid="uid://cdf8dd3oky7p7" path="res://Assets/Gameplay Skins/skn_recoded.png" id="1_t2yq0"]
 [ext_resource type="Script" uid="uid://bmn0nhwb1g1j5" path="res://Scripts/Components/Gameplay Components/Player Components/player_input.gd" id="2_rlo5k"]
 [ext_resource type="Script" uid="uid://dcxwib0d8osyc" path="res://Scripts/Components/Gameplay Components/Player Components/player_gun.gd" id="3_hxtw5"]
@@ -8,6 +9,10 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t2yq0"]
 
 [node name="Player" type="CharacterBody2D" unique_id=108686648]
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=343712705]
+color = Color(1, 1, 0, 1)
+texture = ExtResource("1_hxtw5")
 
 [node name="Player Sprite" type="Sprite2D" parent="." unique_id=199937032]
 modulate = Color(1, 1, 0, 1)

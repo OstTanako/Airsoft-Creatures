@@ -29,10 +29,10 @@ func _move_to(dir : Vector2) -> void:
 		player.global_position += combined_move
 	else:
 		if Input.is_action_just_pressed("Move Left"):
-			board_animator._bounce_board(Vector2(-20.0 , 0.0))
+			board_animator._bounce_board(Vector2(-50.0 , 0.0))
 		
 		elif Input.is_action_just_pressed("Move Right"):
-			board_animator._bounce_board(Vector2(20.0 , 0.0))
+			board_animator._bounce_board(Vector2(50.0 , 0.0))
 
 func _get_input() -> void:
 	if Input.is_action_just_pressed("Move Left"):

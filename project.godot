@@ -21,7 +21,7 @@ run/max_fps=60
 
 window/size/mode=4
 window/size/resizable=false
-window/stretch/mode="canvas_items"
+window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 
 [editor_plugins]
@@ -33,7 +33,8 @@ enabled=PackedStringArray("res://addons/trail_2d/plugin.cfg")
 folder_colors={
 "res://Assets/": "red",
 "res://Scenes/": "orange",
-"res://Scripts/": "yellow"
+"res://Scripts/": "yellow",
+"res://Shaders/": "green"
 }
 
 [global_group]

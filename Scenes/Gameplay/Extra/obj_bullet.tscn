@@ -4,10 +4,10 @@
 [ext_resource type="Script" uid="uid://c3a0rxqasx5nn" path="res://Scripts/Components/Gameplay Components/Player Components/player_bullet.gd" id="2_vapn3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vn30o"]
-size = Vector2(8, 8)
+size = Vector2(12, 11)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vapn3"]
-size = Vector2(8, 8)
+size = Vector2(12, 12)
 
 [node name="OBJ Bullet" type="CharacterBody2D" unique_id=1137960808 groups=["Player Bullet"]]
 
@@ -20,9 +20,12 @@ vframes = 3
 frame = 9
 
 [node name="Eraser Cast" type="RayCast2D" parent="." unique_id=1856307392]
+visible = false
+enabled = false
 target_position = Vector2(0, -16)
 
 [node name="Shape 2D" type="CollisionShape2D" parent="." unique_id=79713452]
+position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_vn30o")
 
 [node name="Eraser Area" type="Area2D" parent="." unique_id=836681725]
