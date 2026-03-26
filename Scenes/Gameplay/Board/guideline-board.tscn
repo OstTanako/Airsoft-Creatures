@@ -1,11 +1,14 @@
 [gd_scene format=4 uid="uid://7e4evomgrtuu"]
 
 [ext_resource type="Texture2D" uid="uid://cdf8dd3oky7p7" path="res://Assets/Gameplay Skins/skn_recoded.png" id="1_fgcsm"]
+[ext_resource type="Texture2D" uid="uid://cathc411p1tra" path="res://Assets/User Interface/Icons/ico_alert.png" id="2_hlaqj"]
 [ext_resource type="Script" uid="uid://xncmioquk3uk" path="res://Scripts/Components/Gameplay Components/Board Components/board_component.gd" id="2_sspuk"]
 [ext_resource type="Script" uid="uid://cifeyj1aiblhf" path="res://Scripts/Components/Gameplay Components/Board Components/board_animator.gd" id="3_bs78j"]
 [ext_resource type="Script" uid="uid://c2ud63h5hrlg6" path="res://Scripts/Components/Gameplay Components/Player Components/player_spawner.gd" id="3_hlaqj"]
 [ext_resource type="Script" uid="uid://byi3wcswaxvny" path="res://Scripts/Components/Gameplay Components/Intruder Components/intruder_component.gd" id="4_fq5lo"]
 [ext_resource type="PackedScene" uid="uid://b81adi5mlbecl" path="res://Scenes/Gameplay/Entities/player.tscn" id="6_8n0xe"]
+[ext_resource type="Texture2D" uid="uid://c5i4xmyk471a4" path="res://Assets/User Interface/Icons/ico_health.png" id="7_gyj51"]
+[ext_resource type="PackedScene" uid="uid://b52dr083vrwkd" path="res://Scenes/User Interface/ui_game_stats.tscn" id="8_fq5lo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sspuk"]
 texture = ExtResource("1_fgcsm")
@@ -257,6 +260,12 @@ modulate = Color(1, 1, 1, 0.5254902)
 tile_map_data = PackedByteArray("AAD/////AAAAAAAAAAD//wAAAAAAAAEAAAAAAP//AAABAAAAAAAAAAAAAAABAAEAAAABAP//AAAAAAAAAAABAAAAAAAAAAEAAAACAP//AAABAAAAAAACAAAAAAABAAEAAAD9////AAAAAAAAAAD9/wAAAAAAAAEAAAD+////AAABAAAAAAD+/wAAAAABAAEAAAD7////AAAAAAAAAAD7/wAAAAAAAAEAAAD8////AAABAAAAAAD8/wAAAAABAAEAAAADAP//AAAAAAAAAAADAAAAAAAAAAEAAAAEAP//AAABAAAAAAAEAAAAAAABAAEAAAD7/wEAAAAAAAAAAAD7/wIAAAAAAAEAAAD8/wEAAAABAAAAAAD8/wIAAAABAAEAAAD7/wMAAAAAAAAAAAD7/wQAAAAAAAEAAAD8/wMAAAABAAAAAAD8/wQAAAABAAEAAAD7/wUAAAAAAAAAAAD7/wYAAAAAAAEAAAD8/wUAAAABAAAAAAD8/wYAAAABAAEAAAD7/wcAAAAAAAAAAAD7/wgAAAAAAAEAAAD8/wcAAAABAAAAAAD8/wgAAAABAAEAAAADAP3/AAAAAAAAAAADAP7/AAAAAAEAAAAEAP3/AAABAAAAAAAEAP7/AAABAAEAAAADAPv/AAAAAAAAAAADAPz/AAAAAAEAAAAEAPv/AAABAAAAAAAEAPz/AAABAAEAAAADAPn/AAAAAAAAAAADAPr/AAAAAAEAAAAEAPn/AAABAAAAAAAEAPr/AAABAAEAAAADAPf/AAAAAAAAAAADAPj/AAAAAAEAAAAEAPf/AAABAAAAAAAEAPj/AAABAAEAAAD9/wcAAAAAAAAAAAD9/wgAAAAAAAEAAAD+/wcAAAABAAAAAAD+/wgAAAABAAEAAAD//wcAAAAAAAAAAAD//wgAAAAAAAEAAAAAAAcAAAABAAAAAAAAAAgAAAABAAEAAAABAAcAAAAAAAAAAAABAAgAAAAAAAEAAAACAAcAAAABAAAAAAACAAgAAAABAAEAAAADAAcAAAAAAAAAAAADAAgAAAAAAAEAAAAEAAcAAAABAAAAAAAEAAgAAAABAAEAAAADAAUAAAAAAAAAAAADAAYAAAAAAAEAAAAEAAUAAAABAAAAAAAEAAYAAAABAAEAAAADAAMAAAAAAAAAAAADAAQAAAAAAAEAAAAEAAMAAAABAAAAAAAEAAQAAAABAAEAAAADAAEAAAAAAAAAAAADAAIAAAAAAAEAAAAEAAEAAAABAAAAAAAEAAIAAAABAAEAAAABAAEAAAAAAAAAAAABAAIAAAAAAAEAAAACAAEAAAABAAAAAAACAAIAAAABAAEAAAD//wEAAAAAAAAAAAD//wIAAAAAAAEAAAAAAAEAAAABAAAAAAAAAAIAAAABAAEAAAD9/wMAAAAAAAAAAAD9/wQAAAAAAAEAAAD+/wMAAAABAAAAAAD+/wQAAAABAAEAAAD9/wUAAAAAAAAAAAD9/wYAAAAAAAEAAAD+/wUAAAABAAAAAAD+/wYAAAABAAEAAAD//wUAAAAAAAAAAAD//wYAAAAAAAEAAAAAAAUAAAABAAAAAAAAAAYAAAABAAEAAAABAAUAAAAAAAAAAAABAAYAAAAAAAEAAAACAAUAAAABAAAAAAACAAYAAAABAAEAAAABAAMAAAAAAAAAAAABAAQAAAAAAAEAAAACAAMAAAABAAAAAAACAAQAAAABAAEAAAD//wMAAAAAAAAAAAD//wQAAAAAAAEAAAAAAAMAAAABAAAAAAAAAAQAAAABAAEAAAD9/wEAAAAAAAAAAAD9/wIAAAAAAAEAAAD+/wEAAAABAAAAAAD+/wIAAAABAAEAAAD7//3/AAAAAAAAAAD7//7/AAAAAAEAAAD8//3/AAABAAAAAAD8//7/AAABAAEAAAD7//v/AAAAAAAAAAD7//z/AAAAAAEAAAD8//v/AAABAAAAAAD8//z/AAABAAEAAAD7//n/AAAAAAAAAAD7//r/AAAAAAEAAAD8//n/AAABAAAAAAD8//r/AAABAAEAAAD9//n/AAAAAAAAAAD9//r/AAAAAAEAAAD+//n/AAABAAAAAAD+//r/AAABAAEAAAD9//f/AAAAAAAAAAD9//j/AAAAAAEAAAD+//f/AAABAAAAAAD+//j/AAABAAEAAAD7//f/AAAAAAAAAAD7//j/AAAAAAEAAAD8//f/AAABAAAAAAD8//j/AAABAAEAAAD///f/AAAAAAAAAAD///j/AAAAAAEAAAAAAPf/AAABAAAAAAAAAPj/AAABAAEAAAABAPf/AAAAAAAAAAABAPj/AAAAAAEAAAACAPf/AAABAAAAAAACAPj/AAABAAEAAAABAPn/AAAAAAAAAAABAPr/AAAAAAEAAAACAPn/AAABAAAAAAACAPr/AAABAAEAAAD///n/AAAAAAAAAAD///r/AAAAAAEAAAAAAPn/AAABAAAAAAAAAPr/AAABAAEAAAD///v/AAAAAAAAAAD///z/AAAAAAEAAAAAAPv/AAABAAAAAAAAAPz/AAABAAEAAAD///3/AAAAAAAAAAD///7/AAAAAAEAAAAAAP3/AAABAAAAAAAAAP7/AAABAAEAAAD9//3/AAAAAAAAAAD9//7/AAAAAAEAAAD+//3/AAABAAAAAAD+//7/AAABAAEAAAD9//v/AAAAAAAAAAD9//z/AAAAAAEAAAD+//v/AAABAAAAAAD+//z/AAABAAEAAAABAPv/AAAAAAAAAAABAPz/AAAAAAEAAAACAPv/AAABAAAAAAACAPz/AAABAAEAAAABAP3/AAAAAAAAAAABAP7/AAAAAAEAAAACAP3/AAABAAAAAAACAP7/AAABAAEAAAD7/wkAAAAAAAAAAAD7/woAAAAAAAEAAAD8/wkAAAABAAAAAAD8/woAAAABAAEAAAD9/wkAAAAAAAAAAAD9/woAAAAAAAEAAAD+/wkAAAABAAAAAAD+/woAAAABAAEAAAD//wkAAAAAAAAAAAD//woAAAAAAAEAAAAAAAkAAAABAAAAAAAAAAoAAAABAAEAAAABAAkAAAAAAAAAAAABAAoAAAAAAAEAAAACAAkAAAABAAAAAAACAAoAAAABAAEAAAADAAkAAAAAAAAAAAADAAoAAAAAAAEAAAAEAAkAAAABAAAAAAAEAAoAAAABAAEAAAA=")
 tile_set = SubResource("TileSet_bs78j")
 
+[node name="IcoAlert" type="Sprite2D" parent="Board Stucture" unique_id=465535503]
+modulate = Color(1, 1, 1, 0.0627451)
+position = Vector2(3.8146973e-06, -17.999998)
+scale = Vector2(0.3125, 0.3046875)
+texture = ExtResource("2_hlaqj")
+
 [node name="Board Limit Area" type="TileMapLayer" parent="Board Stucture" unique_id=1639220888]
 modulate = Color(1, 1, 0, 0.11764706)
 tile_map_data = PackedByteArray("AAD7/wkAAAACAAAAAAD7/woAAAACAAEAAAD8/wkAAAADAAAAAAD8/woAAAADAAEAAAD7/wcAAAACAAAAAAD7/wgAAAACAAEAAAD8/wcAAAADAAAAAAD8/wgAAAADAAEAAAD9/wcAAAACAAAAAAD9/wgAAAACAAEAAAD+/wcAAAADAAAAAAD+/wgAAAADAAEAAAD//wcAAAACAAAAAAD//wgAAAACAAEAAAAAAAcAAAADAAAAAAAAAAgAAAADAAEAAAABAAcAAAACAAAAAAABAAgAAAACAAEAAAACAAcAAAADAAAAAAACAAgAAAADAAEAAAADAAcAAAACAAAAAAADAAgAAAACAAEAAAAEAAcAAAADAAAAAAAEAAgAAAADAAEAAAADAAkAAAACAAAAAAADAAoAAAACAAEAAAAEAAkAAAADAAAAAAAEAAoAAAADAAEAAAABAAkAAAACAAAAAAABAAoAAAACAAEAAAACAAkAAAADAAAAAAACAAoAAAADAAEAAAD//wkAAAACAAAAAAD//woAAAACAAEAAAAAAAkAAAADAAAAAAAAAAoAAAADAAEAAAD9/wkAAAACAAAAAAD9/woAAAACAAEAAAD+/wkAAAADAAAAAAD+/woAAAADAAEAAAA=")
@@ -338,7 +347,7 @@ script = ExtResource("2_sspuk")
 board = NodePath("../..")
 limit_area = NodePath("../../Areas + Collisions/Limit Area")
 warning_area = NodePath("../../Areas + Collisions/Warning Area")
-limit_progress = NodePath("../../Limit Progress")
+limit_progress = NodePath("../../Limit Progress Container/Limit Progress")
 board_animator = NodePath("../BoardAnimatorComponent")
 metadata/_custom_type_script = "uid://xncmioquk3uk"
 
@@ -350,13 +359,33 @@ metadata/_custom_type_script = "uid://cifeyj1aiblhf"
 [node name="Player" parent="." unique_id=108686648 instance=ExtResource("6_8n0xe")]
 position = Vector2(0, 160)
 
-[node name="Limit Progress" type="ProgressBar" parent="." unique_id=462439595]
-offset_left = -80.0
-offset_top = 184.0
+[node name="Limit Progress Container" type="HBoxContainer" parent="." unique_id=1905612352]
+offset_left = -88.0
+offset_top = 181.0
 offset_right = 80.0
-offset_bottom = 192.0
+offset_bottom = 197.0
+
+[node name="Limit Progress Icon" type="TextureRect" parent="Limit Progress Container" unique_id=814503200]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("7_gyj51")
+expand_mode = 1
+
+[node name="Limit Progress" type="ProgressBar" parent="Limit Progress Container" unique_id=462439595]
+custom_minimum_size = Vector2(148, 10)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
 theme_override_styles/background = SubResource("StyleBoxFlat_8n0xe")
 theme_override_styles/fill = SubResource("StyleBoxFlat_gyj51")
 max_value = 0.7
 value = 0.7
 show_percentage = false
+
+[node name="UiGameStats" parent="." unique_id=383340538 instance=ExtResource("8_fq5lo")]
+offset_left = -112.0
+offset_top = -96.0
+offset_right = -112.0
+offset_bottom = -96.0

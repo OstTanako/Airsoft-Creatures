@@ -25,7 +25,7 @@ func _shoot() -> void:
 func _get_input() -> void:
 	var board_animator = get_tree().get_first_node_in_group("Board Animator")
 	
-	if Input.is_action_just_pressed("ui_up"):
+	if Input.is_action_just_pressed("Shoot"):
 		_shoot()
 		
 		board_animator._bounce_board(Vector2(0.0 , 5.0))

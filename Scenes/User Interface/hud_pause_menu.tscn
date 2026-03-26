@@ -1,0 +1,115 @@
+[gd_scene format=3 uid="uid://c2hm0fygbrf6j"]
+
+[ext_resource type="FontFile" uid="uid://do3mtrc178f5w" path="res://Assets/Fonts/Font Files/Jersey10-Regular.ttf" id="1_r1jwr"]
+[ext_resource type="Texture2D" uid="uid://cathc411p1tra" path="res://Assets/User Interface/Icons/ico_alert.png" id="2_dp5tw"]
+[ext_resource type="Script" uid="uid://chgw3aq7gsr7b" path="res://Scripts/Components/Node Components/button_animator.gd" id="3_l2sy3"]
+
+[node name="HudPauseMenu" type="Control" unique_id=1051107880]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="ColorRect" parent="." unique_id=714037517]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 0.6313726)
+
+[node name="Header Container" type="VBoxContainer" parent="." unique_id=867536414]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 31.0
+offset_right = 384.0
+offset_bottom = 94.0
+theme_override_constants/separation = 0
+
+[node name="Header Rich Label" type="RichTextLabel" parent="Header Container" unique_id=950503321]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("1_r1jwr")
+theme_override_font_sizes/normal_font_size = 54
+bbcode_enabled = true
+text = "[wave amp=10 freq=10] GAME PAUSED "
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+
+[node name="Separator H" type="HSeparator" parent="Header Container" unique_id=1120884914]
+layout_mode = 2
+
+[node name="Buttons Container" type="VBoxContainer" parent="." unique_id=1906462210]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.017
+anchor_top = 0.5
+anchor_right = 0.23300001
+anchor_bottom = 0.5
+offset_left = -0.6400032
+offset_top = -50.5
+offset_right = 0.63998413
+offset_bottom = 50.5
+grow_vertical = 2
+
+[node name="Continue BTN" type="Button" parent="Buttons Container" unique_id=513807237]
+layout_mode = 2
+text = "CONTINUE"
+icon = ExtResource("2_dp5tw")
+alignment = 2
+expand_icon = true
+
+[node name="ButtonAnimatorComponent" type="Node" parent="Buttons Container/Continue BTN" unique_id=1558102245]
+script = ExtResource("3_l2sy3")
+metadata/_custom_type_script = "uid://chgw3aq7gsr7b"
+
+[node name="Settings BTN" type="Button" parent="Buttons Container" unique_id=2036040900]
+layout_mode = 2
+text = "SETTINGS"
+icon = ExtResource("2_dp5tw")
+alignment = 2
+expand_icon = true
+
+[node name="ButtonAnimatorComponent" type="Node" parent="Buttons Container/Settings BTN" unique_id=18530714]
+script = ExtResource("3_l2sy3")
+metadata/_custom_type_script = "uid://chgw3aq7gsr7b"
+
+[node name="Exit BTN" type="Button" parent="Buttons Container" unique_id=1963474152]
+layout_mode = 2
+text = "GIVE UP"
+icon = ExtResource("2_dp5tw")
+alignment = 2
+expand_icon = true
+
+[node name="ButtonAnimatorComponent" type="Node" parent="Buttons Container/Exit BTN" unique_id=896847398]
+script = ExtResource("3_l2sy3")
+metadata/_custom_type_script = "uid://chgw3aq7gsr7b"
+
+[node name="Mission Container" type="VBoxContainer" parent="." unique_id=814747693]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -832.0
+offset_top = 192.0
+offset_right = -128.0
+offset_bottom = 504.0
+grow_horizontal = 0
+
+[node name="Mission Title Rich" type="RichTextLabel" parent="Mission Container" unique_id=510610189]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("1_r1jwr")
+theme_override_font_sizes/normal_font_size = 54
+bbcode_enabled = true
+text = "[wave amp=10 freq=10] MISSION"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+
+[node name="Separator H" type="HSeparator" parent="Mission Container" unique_id=1056247773]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Mission Desc" type="Label" parent="Mission Container" unique_id=711852082]
+layout_mode = 2
+text = "Some mission desc here."

@@ -1,0 +1,10 @@
+res://Scenes/Gameplay/Board/guideline-board.tscn
+res://Shaders/Background Shaders/checker_board.gdshader
+res://Scenes/User Interface/ui_game_stats.tscn
+res://Scenes/main.tscn
+res://Scenes/Packed General/gameplay.tscn
+res://Scenes/Backgrounds/bg_recoded.tscn
+res://Scenes/User Interface/hud_pause_menu.tscn
+res://Scripts/Components/Gameplay Components/Player Components/player_gun.gd
+res://default_bus_layout.tres
+res://Scripts/Components/Node Components/button_animator.gd

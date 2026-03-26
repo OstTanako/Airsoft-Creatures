@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://7e4evomgrtuu" path="res://Scenes/Gameplay/Board/guideline-board.tscn" id="1_0ngfo"]
 [ext_resource type="PackedScene" uid="uid://daeeu26bymnvl" path="res://Scenes/Backgrounds/bg_recoded.tscn" id="1_3itil"]
+[ext_resource type="Script" uid="uid://72dr1shamwov" path="res://Scripts/Components/Node Components/ac_camera.gd" id="3_rr4r4"]
 
 [sub_resource type="Curve" id="Curve_3itil"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.24324325, 1), 0.0, 0.0, 0, 0, Vector2(0.7297298, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -23,7 +24,7 @@ gravity = Vector3(0, 0, 0)
 scale_min = 10.0
 scale_max = 10.0
 scale_curve = SubResource("CurveTexture_rr4r4")
-color = Color(1, 1, 1, 0.5568628)
+color = Color(1, 1, 1, 0.13333334)
 
 [node name="Gameplay" type="Node2D" unique_id=1554108701]
 
@@ -32,21 +33,27 @@ anchors_preset = 4
 anchor_top = 0.5
 anchor_right = 0.0
 anchor_bottom = 0.5
-offset_left = -112.0
-offset_top = -72.0
-offset_right = -112.0
-offset_bottom = -72.0
+offset_left = -160.0
+offset_top = -112.0
+offset_right = -160.0
+offset_bottom = -112.0
 grow_horizontal = 1
 scale = Vector2(2, 2)
 size_flags_horizontal = 4
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=1338099798]
+visible = false
 position = Vector2(960, 512)
 amount = 33
 process_material = SubResource("ParticleProcessMaterial_dqthf")
 
 [node name="Board Pinner" type="Marker2D" parent="." unique_id=2096097142 groups=["Board Pinner"]]
-position = Vector2(960, 512)
+position = Vector2(960, 540)
 
 [node name="GuidelineBoard" parent="." unique_id=1795045438 instance=ExtResource("1_0ngfo")]
-position = Vector2(960, 511.99994)
+position = Vector2(960, 539.99994)
+
+[node name="ACCamera" type="Camera2D" parent="." unique_id=796144801]
+position = Vector2(960, 540)
+script = ExtResource("3_rr4r4")
+metadata/_custom_type_script = "uid://72dr1shamwov"

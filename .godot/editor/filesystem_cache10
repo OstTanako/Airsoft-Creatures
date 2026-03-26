@@ -1,60 +1,76 @@
 72322a848ab928aa5c89f0cb78209805
-::res://::1774465101
-README.md::TextFile::-1::1774441174::0::1::::<><><>0<>0<><>::
-::res://addons/::1774441174
-::res://addons/trail_2d/::1774441186
-icon.svg::CompressedTexture2D::961055436771160085::1774441174::1774441186::1::::<><><>0<>0<>8f1b8f6fe68d3f4328ddcd6d9193266a<>res://.godot/imported/icon.svg-66a4d9de72e94709c46cc8d517aa7993.ctex::
-plugin.cfg::TextFile::-1::1774441174::0::1::::<><><>0<>0<><>::
-test.tscn::PackedScene::3600885721114100154::1774441174::0::1::::<><><>0<>0<><>::res://addons/trail_2d/trail_2d.gd
-trail_2d.gd::GDScript::1635035501515198775::1774441174::0::1::::<>Line2D<><>0<>0<><>::
-trail_2d_plugin.gd::GDScript::7344964367544843902::1774441174::0::1::::<>EditorPlugin<><>0<>1<><>::
-::res://Assets/::1774460959
-::res://Assets/Background Elements/::1774448977
-bg_grandient.png::CompressedTexture2D::3964427775409197493::1774448974::1774448977::1::::<><><>0<>0<>f630e5a7bf31487e5ae5b9747c39af56<>res://.godot/imported/bg_grandient.png-851a8a0f007e80eb3a12ec4a5334abc3.ctex::
-::res://Assets/Fonts/::1774453394
-::res://Assets/Fonts/Font Files/::1774453630
-Jersey10-Regular.ttf::FontFile::8200471870334769774::1774453361::1774453630::1::::<><><>0<>0<>e3f0c6bdd9032c8cba31662ba5b4df8b<>res://.godot/imported/Jersey10-Regular.ttf-276991902b48e8356d67825fd3c11934.fontdata::
-tazaito-fontto.otf::FontFile::305438168669177383::1774441174::1774445323::1::::<><><>0<>0<>3f442874edd3e916d476013f55dda27b<>res://.godot/imported/tazaito-fontto.otf-100893e3db49740e5f2b773128548dbf.fontdata::
-::res://Assets/Fonts/Font Lincenses/::1774453393
-OFL - Jersey10.txt::TextFile::-1::1774453361::0::1::::<><><>0<>0<><>::
-Tazzaito Fontto - License.txt::TextFile::-1::1774441174::0::1::::<><><>0<>0<><>::
-::res://Assets/Game Branding/::1774441187
-ac_logo.png::CompressedTexture2D::8160807269673027453::1774441174::1774441186::1::::<><><>0<>0<>3311d97eef71b154fa68c110db8b54d7<>res://.godot/imported/ac_logo.png-940bf0dbeb7c110f95177f78b0bb554e.ctex::
-ac_logo_highscale.png::CompressedTexture2D::8829454763861091149::1774441174::1774441187::1::::<><><>0<>0<>8b94a0b9380cb70674633d7c3a5ad826<>res://.godot/imported/ac_logo_highscale.png-4498e8f426e71c26ee29274c25087f24.ctex::
-game_banner_1.png::CompressedTexture2D::2500070190893545499::1774441174::1774441186::1::::<><><>0<>0<>e86b75bf9c0eac88ea58e41653cd365d<>res://.godot/imported/game_banner_1.png-f3eeab9492bb8777ef8b8fed7c5ae0c3.ctex::
-game_bg_1.png::CompressedTexture2D::79657902202516184::1774441174::1774441186::1::::<><><>0<>0<>cede761e5aabfeffccdf384fb2b11abe<>res://.godot/imported/game_bg_1.png-50db7f1f75d6879546d9c6af2c5b79c6.ctex::
-::res://Assets/Gameplay Skins/::1774460980
-skn_recoded.png::CompressedTexture2D::4995739006688620350::1774441174::1774441186::1::::<><><>0<>0<>b2f2f7cf453d95d2b1228cbed29b5489<>res://.godot/imported/skn_recoded.png-493fbdcc5fec835037200939a4c39ffe.ctex::
-::res://Assets/Textures/::1774460963
-2d_light_texture.webp::CompressedTexture2D::5142961644848053896::1774449700::1774449703::1::::<><><>0<>0<>8a136f5d0a99dc5248cc5dd68270f05e<>res://.godot/imported/2d_light_texture.webp-63471a1784cd6c8c39b0ad69a31e04f7.ctex::
-::res://Scenes/::1774465063
-main.tscn::PackedScene::4786823305601775562::1774465063::0::1::::<><><>0<>0<><>::uid://hx1u0eb5civ0::::res://Scenes/Packed General/gameplay.tscn
-::res://Scenes/Backgrounds/::1774452386
-bg_recoded.tscn::PackedScene::7167799612042091721::1774452386::0::1::::<><><>0<>0<><>::uid://bwqnstp3wwaoj::::res://Assets/Background Elements/bg_grandient.png<>uid://ba3mq5ljq8iam::::res://Shaders/Background Shaders/checker_board.gdshader
-::res://Scenes/Gameplay/::1774441174
-::res://Scenes/Gameplay/Board/::1774463820
-guideline-board.tscn::PackedScene::2256069568570671216::1774463820::0::1::::<><><>0<>0<><>::uid://cdf8dd3oky7p7::::res://Assets/Gameplay Skins/skn_recoded.png<>uid://xncmioquk3uk::::res://Scripts/Components/Gameplay Components/Board Components/board_component.gd<>uid://cifeyj1aiblhf::::res://Scripts/Components/Gameplay Components/Board Components/board_animator.gd<>uid://c2ud63h5hrlg6::::res://Scripts/Components/Gameplay Components/Player Components/player_spawner.gd<>uid://byi3wcswaxvny::::res://Scripts/Components/Gameplay Components/Intruder Components/intruder_component.gd<>uid://b81adi5mlbecl::::res://Scenes/Gameplay/Entities/player.tscn
-::res://Scenes/Gameplay/Entities/::1774449792
-intruder.tscn::PackedScene::7240348646567301280::1774449792::0::1::::<><><>0<>0<><>::uid://cdf8dd3oky7p7::::res://Assets/Gameplay Skins/skn_recoded.png<>uid://cfjj3d5i7mn1a::::res://Assets/Textures/2d_light_texture.webp<>uid://cbjliljaflw5c::::res://Scripts/Components/Gameplay Components/Intruder Components/intruder_ai.gd
-player.tscn::PackedScene::4756332169826341015::1774449742::0::1::::<><><>0<>0<><>::uid://cfjj3d5i7mn1a::::res://Assets/Textures/2d_light_texture.webp<>uid://cdf8dd3oky7p7::::res://Assets/Gameplay Skins/skn_recoded.png<>uid://bmn0nhwb1g1j5::::res://Scripts/Components/Gameplay Components/Player Components/player_input.gd<>uid://dcxwib0d8osyc::::res://Scripts/Components/Gameplay Components/Player Components/player_gun.gd<>uid://b53hw1skaqe50::::res://Scenes/Gameplay/Extra/obj_bullet.tscn
-::res://Scenes/Gameplay/Extra/::1774464824
-obj_bullet.tscn::PackedScene::4550354270231591269::1774464824::0::1::::<><><>0<>0<><>::uid://cfjj3d5i7mn1a::::res://Assets/Textures/2d_light_texture.webp<>uid://cdf8dd3oky7p7::::res://Assets/Gameplay Skins/skn_recoded.png<>uid://c3a0rxqasx5nn::::res://Scripts/Components/Gameplay Components/Player Components/player_bullet.gd
-::res://Scenes/Packed General/::1774464663
-gameplay.tscn::PackedScene::540418270848212883::1774464663::0::1::::<><><>0<>0<><>::uid://7e4evomgrtuu::::res://Scenes/Gameplay/Board/guideline-board.tscn<>uid://daeeu26bymnvl::::res://Scenes/Backgrounds/bg_recoded.tscn
-::res://Scripts/::1774464123
-::res://Scripts/Components/::1774441174
-::res://Scripts/Components/Gameplay Components/::1774441174
-::res://Scripts/Components/Gameplay Components/Board Components/::1774463956
-board_animator.gd::GDScript::5344960245171352487::1774443368::0::1::::BoardAnimatorComponent<>Node<><>0<>0<><>::
-board_component.gd::GDScript::1641323620558096178::1774463956::0::1::::BoardComponent<>Node<><>0<>0<><>::
-::res://Scripts/Components/Gameplay Components/Intruder Components/::1774452419
-intruder_ai.gd::GDScript::4862292375749674558::1774441174::0::1::::IntruderAIComponent<>Node<><>0<>0<><>::
-intruder_component.gd::GDScript::4089207450155413022::1774452419::0::1::::IntruderSpawnerComponent<>Marker2D<><>0<>0<><>::
-::res://Scripts/Components/Gameplay Components/Player Components/::1774450239
-player_bullet.gd::GDScript::6739678505345570839::1774441174::0::1::::PlayerBulletComponent<>Node<><>0<>0<><>::
-player_gun.gd::GDScript::7348470578215281946::1774443608::0::1::::PlayerGunComponent<>Node<><>0<>0<><>::
-player_input.gd::GDScript::3257065260021786536::1774443576::0::1::::PlayerInputComponent<>Node<><>0<>0<><>::
-player_spawner.gd::GDScript::6709466694124156303::1774450239::0::1::::PlayerSpawnerComponent<>Marker2D<><>0<>0<><>::
-::res://Shaders/::1774448846
-::res://Shaders/Background Shaders/::1774459144
-checker_board.gdshader::Shader::2444982030547410068::1774459144::0::1::::<><><>0<>0<><>::
+::res://::1774481634
+README.md::TextFile::-1::1774471059::0::1::::<><><>0<>0<><>::
+::res://addons/::1774471059
+::res://addons/trail_2d/::1774471090
+icon.svg::CompressedTexture2D::961055436771160085::1774471059::1774471090::1::::<><><>0<>0<>8f1b8f6fe68d3f4328ddcd6d9193266a<>res://.godot/imported/icon.svg-66a4d9de72e94709c46cc8d517aa7993.ctex::
+plugin.cfg::TextFile::-1::1774471059::0::1::::<><><>0<>0<><>::
+test.tscn::PackedScene::3600885721114100154::1774471059::0::1::::<><><>0<>0<><>::res://addons/trail_2d/trail_2d.gd
+trail_2d.gd::GDScript::1635035501515198775::1774471059::0::1::::<>Line2D<><>0<>0<><>::
+trail_2d_plugin.gd::GDScript::7344964367544843902::1774471059::0::1::::<>EditorPlugin<><>0<>1<><>::
+::res://Assets/::1774479735
+::res://Assets/Background Elements/::1774471059
+bg_grandient.png::CompressedTexture2D::3964427775409197493::1774471059::1774471059::1::::<><><>0<>0<>f630e5a7bf31487e5ae5b9747c39af56<>res://.godot/imported/bg_grandient.png-851a8a0f007e80eb3a12ec4a5334abc3.ctex::
+::res://Assets/Fonts/::1774471059
+::res://Assets/Fonts/Font Files/::1774471059
+Jersey10-Regular.ttf::FontFile::8200471870334769774::1774471059::1774471059::1::::<><><>0<>0<>e3f0c6bdd9032c8cba31662ba5b4df8b<>res://.godot/imported/Jersey10-Regular.ttf-276991902b48e8356d67825fd3c11934.fontdata::
+tazaito-fontto.otf::FontFile::305438168669177383::1774471059::1774471059::1::::<><><>0<>0<>3f442874edd3e916d476013f55dda27b<>res://.godot/imported/tazaito-fontto.otf-100893e3db49740e5f2b773128548dbf.fontdata::
+::res://Assets/Fonts/Font Lincenses/::1774471059
+OFL - Jersey10.txt::TextFile::-1::1774471059::0::1::::<><><>0<>0<><>::
+Tazzaito Fontto - License.txt::TextFile::-1::1774471059::0::1::::<><><>0<>0<><>::
+::res://Assets/Game Branding/::1774471059
+ac_logo.png::CompressedTexture2D::8160807269673027453::1774471059::1774471059::1::::<><><>0<>0<>3311d97eef71b154fa68c110db8b54d7<>res://.godot/imported/ac_logo.png-940bf0dbeb7c110f95177f78b0bb554e.ctex::
+ac_logo_highscale.png::CompressedTexture2D::8829454763861091149::1774471059::1774471059::1::::<><><>0<>0<>8b94a0b9380cb70674633d7c3a5ad826<>res://.godot/imported/ac_logo_highscale.png-4498e8f426e71c26ee29274c25087f24.ctex::
+game_banner_1.png::CompressedTexture2D::2500070190893545499::1774471059::1774471059::1::::<><><>0<>0<>e86b75bf9c0eac88ea58e41653cd365d<>res://.godot/imported/game_banner_1.png-f3eeab9492bb8777ef8b8fed7c5ae0c3.ctex::
+game_bg_1.png::CompressedTexture2D::79657902202516184::1774471059::1774471059::1::::<><><>0<>0<>cede761e5aabfeffccdf384fb2b11abe<>res://.godot/imported/game_bg_1.png-50db7f1f75d6879546d9c6af2c5b79c6.ctex::
+::res://Assets/Gameplay Skins/::1774471059
+skn_recoded.png::CompressedTexture2D::4995739006688620350::1774471059::1774471059::1::::<><><>0<>0<>b2f2f7cf453d95d2b1228cbed29b5489<>res://.godot/imported/skn_recoded.png-493fbdcc5fec835037200939a4c39ffe.ctex::
+::res://Assets/Textures/::1774471059
+2d_light_texture.webp::CompressedTexture2D::5142961644848053896::1774471059::1774471059::1::::<><><>0<>0<>8a136f5d0a99dc5248cc5dd68270f05e<>res://.godot/imported/2d_light_texture.webp-63471a1784cd6c8c39b0ad69a31e04f7.ctex::
+::res://Assets/User Interface/::1774479741
+::res://Assets/User Interface/Icons/::1774479780
+ico_alert.png::CompressedTexture2D::4812494699794992398::1774479674::1774479780::1::::<><><>0<>0<>a23cc8544de65a00b208ee05b4209110<>res://.godot/imported/ico_alert.png-958a9d690c2a4b8c907c21f1a2203b1d.ctex::
+ico_health.png::CompressedTexture2D::6896824232459595413::1774479677::1774479780::1::::<><><>0<>0<>e395aba0a0d0104dfdb659f262c5917b<>res://.godot/imported/ico_health.png-9e1fcbf230014cc04d16e72ba74d2b58.ctex::
+ico_intruders.png::CompressedTexture2D::4817187391572780808::1774479679::1774479780::1::::<><><>0<>0<>1043572309a8b415fe3d11d65db097b9<>res://.godot/imported/ico_intruders.png-59bbee0d936d63de93f8748801a51fbd.ctex::
+ico_level.png::CompressedTexture2D::8151540665393920888::1774479681::1774479780::1::::<><><>0<>0<>2033a10d285a57215603694e9a2102de<>res://.godot/imported/ico_level.png-9bf6a3baacfe7ab6971d1e15b678174a.ctex::
+ico_score.png::CompressedTexture2D::8205185752941953899::1774479683::1774479780::1::::<><><>0<>0<>6cdf0317251b74ec590981320929db56<>res://.godot/imported/ico_score.png-adb1011b48e61fcb8e5135207d7df71a.ctex::
+::res://Audio Buses/::0
+ac_default_bus.tres::AudioBusLayout::4716520185695038825::1774482887::0::1::::<><><>0<>0<><>::
+default_bus_layout.tres::AudioBusLayout::861037057853942767::1774482864::0::1::::<><><>0<>0<><>::
+::res://Locations/::0
+::res://Scenes/::1774481074
+main.tscn::PackedScene::4786823305601775562::1774481074::0::1::::<><><>0<>0<><>::uid://hx1u0eb5civ0::::res://Scenes/Packed General/gameplay.tscn
+::res://Scenes/Backgrounds/::1774481202
+bg_recoded.tscn::PackedScene::7167799612042091721::1774481202::0::1::::<><><>0<>0<><>::uid://bwqnstp3wwaoj::::res://Assets/Background Elements/bg_grandient.png<>uid://ba3mq5ljq8iam::::res://Shaders/Background Shaders/checker_board.gdshader
+::res://Scenes/Gameplay/::1774471059
+::res://Scenes/Gameplay/Board/::1774481396
+guideline-board.tscn::PackedScene::2256069568570671216::1774481396::0::1::::<><><>0<>0<><>::uid://cdf8dd3oky7p7::::res://Assets/Gameplay Skins/skn_recoded.png<>uid://cathc411p1tra::::res://Assets/User Interface/Icons/ico_alert.png<>uid://xncmioquk3uk::::res://Scripts/Components/Gameplay Components/Board Components/board_component.gd<>uid://cifeyj1aiblhf::::res://Scripts/Components/Gameplay Components/Board Components/board_animator.gd<>uid://c2ud63h5hrlg6::::res://Scripts/Components/Gameplay Components/Player Components/player_spawner.gd<>uid://byi3wcswaxvny::::res://Scripts/Components/Gameplay Components/Intruder Components/intruder_component.gd<>uid://b81adi5mlbecl::::res://Scenes/Gameplay/Entities/player.tscn<>uid://c5i4xmyk471a4::::res://Assets/User Interface/Icons/ico_health.png<>uid://b52dr083vrwkd::::res://Scenes/User Interface/ui_game_stats.tscn
+::res://Scenes/Gameplay/Entities/::1774471059
+intruder.tscn::PackedScene::7240348646567301280::1774471059::0::1::::<><><>0<>0<><>::uid://cdf8dd3oky7p7::::res://Assets/Gameplay Skins/skn_recoded.png<>uid://cfjj3d5i7mn1a::::res://Assets/Textures/2d_light_texture.webp<>uid://cbjliljaflw5c::::res://Scripts/Components/Gameplay Components/Intruder Components/intruder_ai.gd
+player.tscn::PackedScene::4756332169826341015::1774471059::0::1::::<><><>0<>0<><>::uid://cfjj3d5i7mn1a::::res://Assets/Textures/2d_light_texture.webp<>uid://cdf8dd3oky7p7::::res://Assets/Gameplay Skins/skn_recoded.png<>uid://bmn0nhwb1g1j5::::res://Scripts/Components/Gameplay Components/Player Components/player_input.gd<>uid://dcxwib0d8osyc::::res://Scripts/Components/Gameplay Components/Player Components/player_gun.gd<>uid://b53hw1skaqe50::::res://Scenes/Gameplay/Extra/obj_bullet.tscn
+::res://Scenes/Gameplay/Extra/::1774471059
+obj_bullet.tscn::PackedScene::4550354270231591269::1774471059::0::1::::<><><>0<>0<><>::uid://cfjj3d5i7mn1a::::res://Assets/Textures/2d_light_texture.webp<>uid://cdf8dd3oky7p7::::res://Assets/Gameplay Skins/skn_recoded.png<>uid://c3a0rxqasx5nn::::res://Scripts/Components/Gameplay Components/Player Components/player_bullet.gd
+::res://Scenes/Packed General/::1774481004
+gameplay.tscn::PackedScene::540418270848212883::1774481004::0::1::::<><><>0<>0<><>::uid://7e4evomgrtuu::::res://Scenes/Gameplay/Board/guideline-board.tscn<>uid://daeeu26bymnvl::::res://Scenes/Backgrounds/bg_recoded.tscn<>uid://72dr1shamwov::::res://Scripts/Components/Node Components/ac_camera.gd
+::res://Scenes/User Interface/::1774482655
+hud_pause_menu.tscn::PackedScene::6683164338618995475::1774482866::0::1::::<><><>0<>0<><>::uid://do3mtrc178f5w::::res://Assets/Fonts/Font Files/Jersey10-Regular.ttf<>uid://cathc411p1tra::::res://Assets/User Interface/Icons/ico_alert.png
+ui_game_stats.tscn::PackedScene::4548038067031617351::1774480491::0::1::::<><><>0<>0<><>::uid://do3mtrc178f5w::::res://Assets/Fonts/Font Files/Jersey10-Regular.ttf<>uid://cavqmwwjx4fwq::::res://Assets/User Interface/Icons/ico_intruders.png<>uid://doewxiqh7tsjg::::res://Assets/User Interface/Icons/ico_level.png<>uid://do5whfn1whdnn::::res://Assets/User Interface/Icons/ico_score.png
+::res://Scripts/::1774471059
+::res://Scripts/Components/::1774471223
+::res://Scripts/Components/Gameplay Components/::1774471059
+::res://Scripts/Components/Gameplay Components/Board Components/::1774471059
+board_animator.gd::GDScript::5344960245171352487::1774471059::0::1::::BoardAnimatorComponent<>Node<><>0<>0<><>::
+board_component.gd::GDScript::1641323620558096178::1774471059::0::1::::BoardComponent<>Node<><>0<>0<><>::
+::res://Scripts/Components/Gameplay Components/Intruder Components/::1774471059
+intruder_ai.gd::GDScript::4862292375749674558::1774471059::0::1::::IntruderAIComponent<>Node<><>0<>0<><>::
+intruder_component.gd::GDScript::4089207450155413022::1774471059::0::1::::IntruderSpawnerComponent<>Marker2D<><>0<>0<><>::
+::res://Scripts/Components/Gameplay Components/Player Components/::1774481657
+player_bullet.gd::GDScript::6739678505345570839::1774471059::0::1::::PlayerBulletComponent<>Node<><>0<>0<><>::
+player_gun.gd::GDScript::7348470578215281946::1774481657::0::1::::PlayerGunComponent<>Node<><>0<>0<><>::
+player_input.gd::GDScript::3257065260021786536::1774471059::0::1::::PlayerInputComponent<>Node<><>0<>0<><>::
+player_spawner.gd::GDScript::6709466694124156303::1774471059::0::1::::PlayerSpawnerComponent<>Marker2D<><>0<>0<><>::
+::res://Scripts/Components/Node Components/::1774472574
+ac_camera.gd::GDScript::2301995098983461641::1774472574::0::1::::ACCamera<>Camera2D<><>0<>0<><>::
+::res://Shaders/::1774471059
+::res://Shaders/Background Shaders/::1774479977
+checker_board.gdshader::Shader::2444982030547410068::1774479977::0::1::::<><><>0<>0<><>::

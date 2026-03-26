@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://b52dr083vrwkd"]
+
+[ext_resource type="FontFile" uid="uid://do3mtrc178f5w" path="res://Assets/Fonts/Font Files/Jersey10-Regular.ttf" id="1_k3wph"]
+[ext_resource type="Texture2D" uid="uid://cavqmwwjx4fwq" path="res://Assets/User Interface/Icons/ico_intruders.png" id="2_2ex35"]
+[ext_resource type="Texture2D" uid="uid://doewxiqh7tsjg" path="res://Assets/User Interface/Icons/ico_level.png" id="3_kseml"]
+[ext_resource type="Texture2D" uid="uid://do5whfn1whdnn" path="res://Assets/User Interface/Icons/ico_score.png" id="4_x4rwh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sopfg"]
+bg_color = Color(1, 0, 0, 1)
+expand_margin_left = 4.0
+expand_margin_right = 4.0
+anti_aliasing_size = 0.01
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ourd8"]
+bg_color = Color(0.4509804, 1, 1, 1)
+expand_margin_left = 4.0
+expand_margin_right = 4.0
+anti_aliasing_size = 0.01
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tr063"]
+bg_color = Color(1, 1, 0, 1)
+expand_margin_left = 4.0
+expand_margin_right = 4.0
+anti_aliasing_size = 0.01
+
+[node name="UiGameStats" type="Control" unique_id=383340538]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=554277388]
+layout_mode = 0
+offset_left = -20.0
+offset_top = -46.0
+offset_right = 20.0
+offset_bottom = 46.0
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer" unique_id=527695987]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sopfg")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/PanelContainer" unique_id=1932430933]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/PanelContainer/HBoxContainer" unique_id=107099581]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_constants/line_spacing = 3
+theme_override_fonts/font = ExtResource("1_k3wph")
+theme_override_font_sizes/font_size = 26
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/PanelContainer/HBoxContainer" unique_id=466496970]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("2_2ex35")
+expand_mode = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer" unique_id=559240701]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ourd8")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/PanelContainer2" unique_id=1446076506]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/PanelContainer2/HBoxContainer" unique_id=1710444559]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 3
+theme_override_fonts/font = ExtResource("1_k3wph")
+theme_override_font_sizes/font_size = 26
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/PanelContainer2/HBoxContainer" unique_id=1929983060]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("3_kseml")
+expand_mode = 1
+
+[node name="PanelContainer3" type="PanelContainer" parent="VBoxContainer" unique_id=1461784348]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_tr063")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/PanelContainer3" unique_id=386247605]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/PanelContainer3/HBoxContainer" unique_id=416621077]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 3
+theme_override_fonts/font = ExtResource("1_k3wph")
+theme_override_font_sizes/font_size = 26
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/PanelContainer3/HBoxContainer" unique_id=560672436]
+modulate = Color(0, 0, 0, 1)
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture = ExtResource("4_x4rwh")
+expand_mode = 1
